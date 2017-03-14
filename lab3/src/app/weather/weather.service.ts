@@ -1,3 +1,3 @@
 export function weatherWorking(): void {
-    console.log('Weather is working');
+    console.log('Weather is workinsdg');
 }
