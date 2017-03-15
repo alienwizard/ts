@@ -1,0 +1,11 @@
+[
+    {
+        "name": "Barcelona",
+        "country": "Spain",
+        "image": "../assets/images/tracks/barcelona"
+    },
+    {
+        "name":"Stockholm",
+        "country":"Sweden"
+    }
+]

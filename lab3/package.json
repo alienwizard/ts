@@ -14,7 +14,9 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "build": "webpack",
-    "launch": "webpack -p"
+    "launch": "webpack -p",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "",
@@ -22,8 +24,12 @@
   "dependencies": {
     "@types/react": "^15.0.16",
     "@types/react-dom": "^0.14.23",
+    "copy-webpack-plugin": "^4.0.1",
     "core-js": "^2.4.1",
     "css-loader": "^0.27.3",
+    "file-loader": "^0.10.1",
+    "json-loader": "^0.5.4",
+    "node-sass": "^4.5.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-hot-loader": "^1.3.1",
@@ -33,6 +39,8 @@
     "redux": "^3.6.0",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.13.2",
+    "styled-components": "^1.4.4",
+    "url-loader": "^0.5.8",
     "webpack": "2.2.1"
   },
   "devDependencies": {
@@ -51,11 +59,14 @@
     "htmllint-loader": "^1.3.8",
     "http-server": "^0.9.0",
     "jasmine-core": "~2.4.1",
+    "json-server": "^0.9.6",
     "karma": "^1.3.0",
     "karma-chrome-launcher": "^2.0.0",
     "karma-cli": "^1.0.1",
+    "karma-coverage": "^1.1.1",
     "karma-jasmine": "^1.0.2",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "karma-phantomjs-launcher": "^1.0.4",
     "lite-server": "^2.2.2",
     "lodash": "^4.16.4",
     "protractor": "4.0.9",
@@ -66,7 +77,8 @@
     "tslint-loader": "^3.4.3",
     "typescript": "^2.2.1",
     "webdriver-manager": "10.2.5",
-    "webpack-dev-server": "^2.4.1"
+    "webpack-dev-server": "^2.4.1",
+    "@kadira/storybook": "^2.21.0"
   },
   "repository": {}
 }

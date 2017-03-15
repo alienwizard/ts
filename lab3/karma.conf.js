@@ -1,9 +1,12 @@
+const path = require('path');
+
 module.exports = function (config) {
     config.set({
-        basePath: '',
+        basePath: './',
         frameworks: ['jasmine'],
         files: [
-            {pattern: '**/*.js.map', included: false}
+            {pattern: '**/*.js.map', included: false},
+            {pattern: '**/*.spec.ts', included: true}
         ],
         exclude: [],
         reporters: ['progress'],
@@ -14,7 +17,11 @@ module.exports = function (config) {
         autoWatch: true,
         plugins: [
             'karma-jasmine',
-            'karma-phantomjs-launcher'
-        ]
+            'karma-phantomjs-launcher',
+            'karma-coverage'
+        ],
+        preprocessors: {
+            'src/app/**/!(*.spec).ts': ['coverage']
+        },
     });
 };

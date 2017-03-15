@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 
 var sourcePath = path.join(__dirname, './src');
@@ -90,6 +91,24 @@ module.exports  = {
                     }
                 ]
             },
+            {
+                test: /\.json$/,
+                include: /\/data\//,
+                use: 'json-loader'
+            },
+            {
+                test: /\.(eot|svg)$/,
+                loader: "file-loader?name=[name].[ext]"
+            },
+            {
+                test: /\.(jpg|png|gif|otf|ttf|woff|woff2|cur|ani)$/,
+                include: path.join(__dirname, 'assets/images/tracks'),
+                loader: "url-loader?name=[name].[ext]&limit=10000"
+            },
+            {
+                test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/,
+                loader: 'url-loader'
+            }
         ]
     },
 
@@ -125,6 +144,9 @@ module.exports  = {
         new HtmlWebpackPlugin({
             template: "./index.html"
     }),
+    new CopyWebpackPlugin([
+        { from: '../assets' }
+    ]),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.LoaderOptionsPlugin({
         options: {

@@ -1,4 +1,5 @@
-import { track } from "../types/index";
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 /* tslint:disable */
 const tracks = [
     {
@@ -11,15 +12,14 @@ const tracks = [
         "country": "Sweden",
         "image": "/images/tracks/stockholm.jpg"
     }
-]
-
-export default class Enzo {
+];
+class Enzo {
     constructor() {
-
     }
-
-static getTracks(): track[] {
-    console.log('tracks: ', tracks);
+    static getTracks() {
+        console.log('tracks: ', tracks);
         return tracks;
     }
 }
+exports.default = Enzo;
+//# sourceMappingURL=enzo.service.js.map
