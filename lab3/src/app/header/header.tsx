@@ -7,6 +7,8 @@ import * as logo from "../../../assets/F1_logo.svg";
 const Header = styled.header`
     height: 90px;
     width:100%;
+    border-bottom:1px solid gray;
+    
 `;
 
-export default () => <header><img src="/images/tracks/barcelona.jpg" /><h1>Header</h1></header>;
+export default () => <Header><h1>Header</h1></Header>;

@@ -8,12 +8,13 @@ export enum tireType {
 export type track = {
     name: string;
     country: string;
+    countryCode: string;
     image: string;
 }
 
 export type weather = {
     conditions: string;
-    temperature: string;
+    temperature: number;
 }
 
 export type carConfig = {

@@ -15,7 +15,7 @@ module.exports  = {
             'react-redux',
             'react-router',
             'react-router-redux',
-            'redux'
+            'redux',
         ]
     },
     output: {
@@ -49,7 +49,7 @@ module.exports  = {
             // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
             { 
                 test: /\.js$/, 
-                exclude: [ /\/node_modules\// ],
+                exclude: [ /\/node_modules\//, /\/stories\// ],
                 enforce: "pre",
                 use: [
                     {
@@ -78,6 +78,15 @@ module.exports  = {
                     }]
             },
             {
+                test: /\.css$/,
+                use: [
+                    { loader: "style-loader" },
+                    { loader: "css-loader" }
+                ],
+
+                
+            },
+            {
                 test: "\.html$",
 
                 use: [
@@ -97,8 +106,15 @@ module.exports  = {
                 use: 'json-loader'
             },
             {
-                test: /\.(eot|svg)$/,
+                test: /\.eot$/,
                 loader: "file-loader?name=[name].[ext]"
+            },
+            {
+                test: /\.svg/,
+                use: {
+                    loader: 'svg-url-loader',
+                    options: {}
+                }
             },
             {
                 test: /\.(jpg|png|gif|otf|ttf|woff|woff2|cur|ani)$/,
@@ -106,15 +122,18 @@ module.exports  = {
                 loader: "url-loader?name=[name].[ext]&limit=10000"
             },
             {
-                test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/,
+                test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)/,
                 loader: 'url-loader'
-            }
+            },
         ]
     },
 
   resolve: {
 
-    extensions: [' ', '.ts', '.tsx', '.js', '.jsx']
+    extensions: [' ', '.ts', '.tsx', '.js', '.jsx'],
+    alias: {
+        flagIcons: path.join(__dirname, 'node_modules/flag-icon-css/css/flag-icon.css')
+    }
     // extensions that are used
   },
 
@@ -151,8 +170,8 @@ module.exports  = {
     new webpack.LoaderOptionsPlugin({
         options: {
             tslint: {
-                emitErrors: true,
-                failOnHint: true,
+                emitErrors: false,
+                failOnHint: false,
                 fix: true,
                 tsConfigFile: 'tsconfig.json',
             }

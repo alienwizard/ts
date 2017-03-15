@@ -4,11 +4,13 @@ const tracks = [
     {
         "name": "Barcelona",
         "country": "Spain",
+        "countryCode": "sp",
         "image": "/images/tracks/barcelona.jpg"
     },
     {
         "name": "Stockholm",
         "country": "Sweden",
+        "countryCode": "se",
         "image": "/images/tracks/stockholm.jpg"
     }
 ]
