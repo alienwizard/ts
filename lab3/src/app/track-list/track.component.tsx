@@ -90,7 +90,7 @@ const TrackComponent = ({track, index}: trackProps) => {
             <TrackTitle>{track.name}</TrackTitle>
             <h5>{track.country}</h5>
             <LinkWrap>
-                <Link to={{pathname: '/track', id: 'id='+track.id+''}}> konfigurera din bil </Link>
+                <Link to={{pathname: '/track', search: 'id='+track.id+''}}> konfigurera din bil </Link>
             </LinkWrap>
     </TrackWrapper>
     );

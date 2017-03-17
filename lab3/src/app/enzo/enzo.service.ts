@@ -151,6 +151,10 @@ static getTracks(): track[] {
     console.log('tracks: ', tracks);
         return tracks;
     }
+static getTrack(id: number): track {
+    const track = tracks.filter((item: track) => (item.id === id));
+    return track as any
+}
 static getConfig(weather: weather): carConfig {
     // get the correct config based on the current weather condition
     switch(weather.conditions){

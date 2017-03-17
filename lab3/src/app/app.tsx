@@ -21,7 +21,12 @@ export default () => (
     <Router>
         <div>
             <Route exact path="/" component={Home}/>
-            <Route path="/track/:track" component={SingleTrackComponent}/>
+            <Route path="/track/:track" render={({match}) => (
+                <div>
+                    
+                </div>
+            )}/>
+            
         </div>
     </Router>
 );
