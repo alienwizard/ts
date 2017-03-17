@@ -1,7 +1,10 @@
 export const Colors = {
+    white: "#fff",
     gray: "#f5f5f5",
     darkGray: "#dcdcdc",
-    black: "#333"
+    black: "#333",
+    red: "#d31411",
+    linkBlue: "#267788"
 };
 
 export const Sizes = {

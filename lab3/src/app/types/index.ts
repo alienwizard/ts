@@ -1,8 +1,11 @@
-export enum tireType {
-    'SUPER_SOFT',
-    'SOFT',
-    'HARD',
-    'RAIN'
+export type tireType = 'SUPER_SOFT' | "SOFT" | 'HARD' | 'RAIN';
+
+export enum ConditionType {
+    "SUNNY",
+    "CLOUDY",
+    "DRIZZLE",
+    "RAIN",
+    "HEAVY RAIN"
 }
 
 export type track = {
@@ -13,10 +16,20 @@ export type track = {
 }
 
 export type weather = {
-    conditions: string;
+    conditions: ConditionType;
     temperature: number;
 }
 
-export type carConfig = {
+export type suspensionConfig = {
+    stiffness: number;
+    damping: number;
+}
 
+export type carConfig = {
+    configuration: {
+        frontwing: number;
+        backwing: number;
+        suspension: suspensionConfig[];
+        tire: tireType;
+    }
 }

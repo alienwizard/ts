@@ -1,20 +1,20 @@
-import { weather } from "../types/index";
+import { weather, ConditionType } from "../types/index";
 const foreCast: weather[] = [
     {
-        "conditions": "SUNNY",
+        "conditions": ConditionType.SUNNY,
         "temperature": 28
     },
     {
-        "conditions": "RAIN",
+        "conditions": ConditionType.RAIN,
         "temperature": 19
     }
 ];
 
-export default class weatherService {
-    constructor(){
-        console.log('Weather is workinsdg');
+export default class WeatherService {
+    constructor() {
+        
     }
-    static getForecast(): weather[]{
+    static getForecast(): weather[] {
         return foreCast;
     }
 }
