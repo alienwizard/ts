@@ -8,14 +8,29 @@ export const ArticleHeader = styled.header`
     display:flex;
     justify-content:center;
     alignt-items:center;
+    align-content:center;
     color: white;
+
+    h1{
+
+    }
+`;
+
+export const Wrapper = styled.section`
+    display:flex;
 `;
 
 export const Container = styled.div`
     display:flex;
-    flex-flow: row;
+    flex-flow: column;
     width: 1100px;
+    align-items:center;
 `;
+
+export const Row = styled.div`
+    display:flex;
+    flex-flow:row;
+`
 
 export const Section = styled.section`
     width:100%;

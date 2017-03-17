@@ -9,6 +9,7 @@ export enum ConditionType {
 }
 
 export type track = {
+    id: number;
     name: string;
     country: string;
     countryCode: string;

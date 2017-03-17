@@ -2,7 +2,6 @@ import * as React from "react";
 import { weather } from "../types/index";
 import { Ul } from "../styles/lists";
 import { Colors } from "../styles/index"
-import { StandardBtn } from "../styles/buttons";
 import styled from "styled-components";
 import "ionicons/dist/css/ionicons-core.css";
 
@@ -12,7 +11,7 @@ interface WeatherState {
 
 interface WeatherProps {
     forecastList: weather[];
-    selectForecast: (element: weather) => void
+    selectForecast: (element: weather) => void;
 }
 
 const TempWrap = styled.li`
@@ -58,7 +57,6 @@ export default class WeatherList extends React.Component<WeatherProps, WeatherSt
         const forecastList = this.props.forecastList;
         return (
             <div>
-            <StandardBtn onClick={this.showWeather}>{this.state.isVisible ? <p>Avbryt<i className="icon ion-home"></i></p> : <p>konfigurera bil<i className="icon ion-home"></i></p>}</StandardBtn>
             {this.state.isVisible &&
             <Ul>
                 Dagens Väderprognos:

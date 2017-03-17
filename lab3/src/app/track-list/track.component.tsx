@@ -1,10 +1,11 @@
 import * as React from "react";
-import WeatherComponent from "./weather.component";
 import styled from "styled-components";
 import { track, weather, carConfig } from "../types/index";
 import { Colors } from "../styles/index";
+import { LinkWrap } from "../styles/buttons";
 import "flag-icon-css/css/flag-icon.min.css";
 import WeatherService from "../weather/weather.service";
+import { Link } from "react-router";
 
 const TrackImage = styled.div`
     height: 250px;
@@ -71,13 +72,11 @@ const ImageWrap = styled.div`
 type trackProps = {
     track: track,
     index: number
-    updateForecast: (weather: weather) => void;
     updateCurrentTrack: (track: track) => void;
 }
 
-const TrackComponent = ({track, index, updateForecast}: trackProps) => {
+const TrackComponent = ({track, index}: trackProps) => {
     const countryClass = "flag-icon flag-icon-";
-    const forecast = WeatherService.getForecast();
 
     return(
     <TrackWrapper key={index}>
@@ -90,7 +89,9 @@ const TrackComponent = ({track, index, updateForecast}: trackProps) => {
             </ImageWrap>
             <TrackTitle>{track.name}</TrackTitle>
             <h5>{track.country}</h5>
-            <WeatherComponent forecastList={forecast} selectForecast={ (weather) => updateForecast(weather)}/>
+            <LinkWrap>
+                <Link to={{pathname: '/track', id: 'id='+track.id+''}}> konfigurera din bil </Link>
+            </LinkWrap>
     </TrackWrapper>
     );
 }

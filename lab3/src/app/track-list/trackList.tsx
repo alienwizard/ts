@@ -1,13 +1,12 @@
 import * as React from "react";
 import { track, weather, carConfig } from "../types/index";
 import { Ul } from "../styles/lists";
-import { Container, ArticleHeader, Section } from "../styles/grid";
+import { Container, ArticleHeader, Section, Row } from "../styles/grid";
 import { Colors, Sizes } from "../styles/index";
-import CarConfig from "./car-config.component"
 import TrackComponent from "./track.component";
 import SearchComponent from "../shared/search.component";
 import styled from "styled-components";
-import Enzo from "./enzo.service";
+import Enzo from "../enzo/enzo.service";
 import "ionicons/dist/css/ionicons.min.css";
 
 type trackListProps = {
@@ -27,18 +26,14 @@ const ListWrap = styled(Ul)`
     width:${Sizes.pageSize};
 `;
 
-export class TrackList extends React.Component<trackListProps, TrackListState> {
+export default class TrackList extends React.Component<trackListProps, TrackListState> {
     constructor(props: trackListProps) {
         super(props);
         this.state = {currentTrack: null, currentConfig: null, trackArray: this.props.initialTracks};
         const initialTracks = this.props.initialTracks;
         this.filterTracks = this.filterTracks.bind(this)
     }
-    getConfig(weather: weather) {
-        const config = Enzo.getConfig(weather);
-        console.log('current config', config);
-        this.setState({currentConfig: config});
-    }
+
     updateCurrentTrack(track: track) {
         this.setState({ currentTrack:  track})
     }
@@ -55,8 +50,10 @@ export class TrackList extends React.Component<trackListProps, TrackListState> {
             <Section>
                 <ArticleHeader>
                     <Container>
-                        <h1>Banor</h1>
-                        <SearchComponent searchChange={this.filterTracks}/>
+                        <Row>
+                            <h1>Banor</h1>
+                            <SearchComponent searchChange={this.filterTracks}/>
+                        </Row>
                     </Container>
                 </ArticleHeader>
                 <Container>
@@ -64,12 +61,9 @@ export class TrackList extends React.Component<trackListProps, TrackListState> {
                     {this.state.trackArray &&
                     <ListWrap>
                         {this.state.trackArray.map((element: track, index) =>
-                            <TrackComponent key={index} track={element} index={index} updateForecast={ (weather) => this.getConfig(weather)} updateCurrentTrack={ (element) => this.updateCurrentTrack(element)}/>
+                            <TrackComponent key={index} track={element} index={index} updateCurrentTrack={ (element) => this.updateCurrentTrack(element)}/>
                         )}
                     </ListWrap>
-                    }
-                    {this.state.currentTrack &&
-                    <CarConfig track={this.state.currentTrack} config={this.state.currentConfig} />
                     }
                 </Container>
             </Section>

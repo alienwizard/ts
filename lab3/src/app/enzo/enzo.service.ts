@@ -2,24 +2,28 @@ import { track, carConfig, weather, ConditionType } from "../types/index";
 /* tslint:disable */
 const tracks = [
     {
+        "id": 1,
         "name": "Barcelona",
         "country": "Spain",
         "countryCode": "es",
         "image": "/images/tracks/barcelona.jpg"
     },
     {
+        "id": 2,
         "name": "Kungens kurva",
         "country": "Sweden",
         "countryCode": "se",
         "image": "/images/tracks/stockholm.jpg"
     },
     {
+        "id": 3,
         "name": "Spa Francorchamps",
         "country": "Belgium",
         "countryCode": "be",
         "image": "/images/tracks/spa.jpg"
     },
     {
+        "id": 4,
         "name": "Suzuka",
         "country": "Japan",
         "countryCode": "jp",

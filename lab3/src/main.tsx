@@ -5,6 +5,6 @@ import "../assets/css/global.css";
 export interface HelloProps { compiler: string; framework: string; }
 
 ReactDOM.render(
-  <App compiler="TypeScript" framework="React" />,
+  <App />,
   document.getElementById("root")
 );
