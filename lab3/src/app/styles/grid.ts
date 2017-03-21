@@ -18,6 +18,7 @@ export const ArticleHeader = styled.header`
 
 export const Wrapper = styled.section`
     display:flex;
+    flex-flow:column;
 `;
 
 export const Container = styled.div`
@@ -30,6 +31,7 @@ export const Container = styled.div`
 export const Row = styled.div`
     display:flex;
     flex-flow:row;
+    width:100%;
 `
 
 export const Section = styled.section`

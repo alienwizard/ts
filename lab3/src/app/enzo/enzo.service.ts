@@ -6,28 +6,32 @@ const tracks = [
         "name": "Barcelona",
         "country": "Spain",
         "countryCode": "es",
-        "image": "/images/tracks/barcelona.jpg"
+        "image": "/images/tracks/barcelona.jpg",
+        "color": "#c60b1e"
     },
     {
         "id": 2,
         "name": "Kungens kurva",
         "country": "Sweden",
         "countryCode": "se",
-        "image": "/images/tracks/stockholm.jpg"
+        "image": "/images/tracks/stockholm.jpg",
+        "color": "#006aa7"
     },
     {
         "id": 3,
         "name": "Spa Francorchamps",
         "country": "Belgium",
         "countryCode": "be",
-        "image": "/images/tracks/spa.jpg"
+        "image": "/images/tracks/spa.jpg",
+        "color": "#ffd90c"
     },
     {
         "id": 4,
         "name": "Suzuka",
         "country": "Japan",
         "countryCode": "jp",
-        "image": "/images/tracks/suzuka.jpg"
+        "image": "/images/tracks/suzuka.jpg",
+        "color": "#d30000"
     }
 ]
 

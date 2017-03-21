@@ -8,7 +8,7 @@ import styled from "styled-components";
 
 const trackList = Enzo.getTracks();
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
     display:flex;
     flex-flow:column;
     justify-content: center;
@@ -17,7 +17,6 @@ const Wrapper = styled.div`
 
 export default () => (
     <Wrapper>
-        <Header />
             <TrackList initialTracks={trackList}/>
     </Wrapper>
 );

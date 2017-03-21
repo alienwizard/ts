@@ -22,4 +22,4 @@ const InitialClubArray = [
     }
 ]
 
-export default () => <Header><LogoWrap><img src={logo as any} alt="f1"/></LogoWrap><ClubBarComponent clubArray={InitialClubArray } /><h1>Header</h1></Header>;
+export default () => <Header role="header"><LogoWrap role="banner" tabIndex={0}><img src={logo as any} alt="f1"/></LogoWrap><ClubBarComponent clubArray={InitialClubArray } /><h1>Header</h1></Header>;

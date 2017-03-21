@@ -4,6 +4,7 @@ import { Ul } from "../styles/lists";
 import { Colors } from "../styles/index"
 import styled from "styled-components";
 import "ionicons/dist/css/ionicons-core.css";
+import * as d3 from "d3";
 
 interface WeatherState {
     isVisible: boolean;
@@ -36,13 +37,25 @@ const Link = styled.span`
     cursor:pointer;
 `;
 
-
-
 export default class WeatherList extends React.Component<WeatherProps, WeatherState> {
     constructor(props: WeatherProps) {
         super(props);
         this.state = {isVisible: true};
     };
+
+    componentDidMount() {
+        /*
+        const weatherGraph = d3.json(this.props.forecastList, function(data){
+    let extent = d3.extent(data, function(d: weather) {
+        return d.temperature;
+    });
+
+    let scale = d3.scaleLinear()
+        .domain(extent)
+        .range([0, 600]);
+})
+*/
+    }
 
     showWeather = () => {
         this.setState( prevState => ({

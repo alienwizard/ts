@@ -1,0 +1,9 @@
+{
+	"defaults": {
+		"timeout": 1000
+	},
+	"urls": [
+		"http://localhost:5400/home",
+		"http://localhost:5400/archive"
+	]
+}

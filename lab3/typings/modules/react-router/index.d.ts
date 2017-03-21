@@ -213,7 +213,7 @@ namespace ReactRouter {
 	 */
 	export class Router extends React.Component<IRouterProps, {}>{ }
 
-	export interface ILinkProps extends React.HTMLAttributes {
+	export interface ILinkProps extends React.HTMLAttributes<any> {
 		/**
 		 * The path to link to, e.g. /users/123.
 		 *
@@ -271,7 +271,7 @@ namespace ReactRouter {
 		 *
 		 * @param {React.MouseEvent} event **NOTE** I'm assuming this will be a click event.
 		 */
-		onClick?(event: React.MouseEvent): any;
+		onClick?(event: React.MouseEvent<any>): any;
 	}
 
 	/**

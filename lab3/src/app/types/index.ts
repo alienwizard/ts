@@ -14,6 +14,7 @@ export type track = {
     country: string;
     countryCode: string;
     image: string;
+    color: string;
 }
 
 export type weather = {
