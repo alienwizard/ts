@@ -1,6 +1,5 @@
 import styled, { css } from "styled-components";
 import { Colors } from "./index";
-import { Link } from "react-router-dom";
 
 export const StandardBtn = styled.button`
     margin-top: 1rem;
@@ -24,9 +23,14 @@ export const button = css`
     border-radius:2px;
     transition: all .2s;
     padding: 0 3rem;
+    max-width: 150px;
 
     &:hover{
         background-color: ${ Colors.hoverGray };
+    }
+
+    a{
+        color: ${ Colors.black };
     }
 `;
 

@@ -7,7 +7,7 @@ const tracks = [
         "country": "Spain",
         "countryCode": "es",
         "image": "/images/tracks/barcelona.jpg",
-        "color": "#c60b1e"
+        "color": "c60b1e"
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@ const tracks = [
         "country": "Sweden",
         "countryCode": "se",
         "image": "/images/tracks/stockholm.jpg",
-        "color": "#006aa7"
+        "color": "006aa7"
     },
     {
         "id": 3,
@@ -23,7 +23,7 @@ const tracks = [
         "country": "Belgium",
         "countryCode": "be",
         "image": "/images/tracks/spa.jpg",
-        "color": "#ffd90c"
+        "color": "ffd90c"
     },
     {
         "id": 4,
@@ -31,7 +31,7 @@ const tracks = [
         "country": "Japan",
         "countryCode": "jp",
         "image": "/images/tracks/suzuka.jpg",
-        "color": "#d30000"
+        "color": "ffffff"
     }
 ]
 
@@ -146,7 +146,11 @@ const carConfigs: carConfig[] = [
     }
 ]
 
-export default class Enzo {
+interface Enzo{
+    
+}
+
+export default class EnzoService implements Enzo {
     constructor() {
 
     }

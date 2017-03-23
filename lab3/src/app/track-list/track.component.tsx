@@ -1,10 +1,9 @@
 import * as React from "react";
 import styled from "styled-components";
-import { track, weather, carConfig } from "../types/index";
+import { track } from "../types/index";
 import { Colors } from "../styles/index";
 import { LinkWrap } from "../styles/buttons";
 import "flag-icon-css/css/flag-icon.min.css";
-import WeatherService from "../weather/weather.service";
 import { Link } from "react-router-dom";
 import Overdrive from "react-overdrive"
 
@@ -24,6 +23,7 @@ const TrackWrapper = styled.li`
     background-color:${Colors.gray};
     color:${Colors.black};
     text-align:center;
+    margin-bottom:2rem;
 `;
 
 const CountryWrap = styled.div`
@@ -68,6 +68,10 @@ const BoxBorder = styled.svg`
 
 const ImageWrap = styled.div`
     position:relative;
+`;
+
+const TrackLink = styled(({...props}) =>  <Link {...props}/>)`
+
 `;
 
 type trackProps = {

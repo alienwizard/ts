@@ -4,7 +4,6 @@ import { Ul } from "../styles/lists";
 import { Colors } from "../styles/index"
 import styled from "styled-components";
 import "ionicons/dist/css/ionicons-core.css";
-import * as d3 from "d3";
 
 interface WeatherState {
     isVisible: boolean;

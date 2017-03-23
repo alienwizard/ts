@@ -8,18 +8,28 @@ import WeatherComponent from "./weather.component";
 import WeatherService from "../weather/weather.service";
 import { getContrastYIQ } from "../utils/index";
 import "flag-icon-css/css/flag-icon.min.css";
-import Overdrive from "react-overdrive";
 import { Link } from "react-router-dom";
 
 const TrackHeader = styled.header`
     display:flex;
     align-items:center;
-    flex-flow:column;
+    flex-flow:row;
     width:100%;
+    justify-content: space-between;
+    padding: 35px 0px;
+`;
+
+const TrackFlag = styled.i`
+    font-size:150px!important;
+    display:block;
 `;
 
 type Trackviewprops = {
-    currentTrackId: number;
+    match: {
+        params: {
+            trackId: string;
+        };
+    }
 }
 
 type TrackviewState = {
@@ -36,7 +46,8 @@ class TrackViewComponent extends React.Component<Trackviewprops, TrackviewState>
     }
 
     componentDidMount() {
-        const track = Enzo.getTrack(this.props.currentTrackId);
+        console.log(this.props);
+        const track = Enzo.getTrack(parseInt(this.props.match.params.trackId));
         const forecast = WeatherService.getForecast();
         this.setState({currentForecast: forecast, currentTrack: track[0]});
     }
@@ -46,16 +57,20 @@ class TrackViewComponent extends React.Component<Trackviewprops, TrackviewState>
         this.setState({currentConfig: config});
     }
 
-
     render() {
+        const countryClass = "flag-icon flag-icon-";
         return(
             <Wrapper>
                 <Row>
                 {this.state.currentTrack &&
-                <TrackHeader style={{backgroundColor: this.state.currentTrack.color, color: getContrastYIQ(this.state.currentTrack.color)}} role="banner">
-                        <div><img src={this.state.currentTrack.countryCode} alt={this.state.currentTrack.country}/></div>
-                        <h1>{this.state.currentTrack.name}</h1>
-                        <Link to="/" tabindex={0} style={{color: getContrastYIQ(this.state.currentTrack.color)}}>Tillbaka</Link>
+                <TrackHeader style={{backgroundColor: "#" + this.state.currentTrack.color, color: getContrastYIQ(this.state.currentTrack.color)}} role="banner">
+                    <Container>
+                        <Row>
+                            <TrackFlag className={countryClass + this.state.currentTrack.countryCode} alt={this.state.currentTrack.country}></TrackFlag>
+                            <h1>{this.state.currentTrack.name}</h1>
+                            <Link to="/" tabIndex={0} style={{color: getContrastYIQ(this.state.currentTrack.color)}}>Tillbaka</Link>
+                        </Row>
+                    </Container>
                 </TrackHeader>
                 }
                 </Row>

@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Component } from "react";
 import styled from "styled-components";
 import ClubBarComponent from "./club-bar.components";
 import * as logo from "../../../assets/F1_logo.svg";

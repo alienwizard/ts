@@ -20,8 +20,8 @@ module.exports  = {
         ]
     },
     output: {
-        filename: '[name].bundle.js',
-        chunkFilename: "[id].chunk.js",
+        filename: '[name].js',
+        chunkFilename: "[name]-[id].js",
         path: path.join(__dirname, 'dist'),
         publicPath: "/", // string
     },
@@ -42,7 +42,8 @@ module.exports  = {
                 exclude: /(node_modules)/,
                  include: path.resolve(__dirname, '/'),
                 use: [
-                    { loader: "awesome-typescript-loader" }              
+                    { loader: "awesome-typescript-loader" },
+                       
                 ]
 
             },
@@ -140,8 +141,8 @@ module.exports  = {
 
     performance: {
     hints: "warning", // enum
-    maxAssetSize: 200000, // int (in bytes),
-    maxEntrypointSize: 400000, // int (in bytes)
+    maxAssetSize: 10000000, // int (in bytes),
+    maxEntrypointSize: 5000000, // int (in bytes)
     assetFilter: function(assetFilename) { 
       // Function predicate that provides asset filenames
       return assetFilename.endsWith('.css') || assetFilename.endsWith('.js');
@@ -169,6 +170,8 @@ module.exports  = {
     ]),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.LoaderOptionsPlugin({
+        minimize: true,
+        debug: false,
         options: {
             tslint: {
                 emitErrors: false,
@@ -177,7 +180,10 @@ module.exports  = {
                 tsConfigFile: 'tsconfig.json',
             }
         }
-    })
+    }),
+    new webpack.optimize.CommonsChunkPlugin({
+                name: ['main','vendor'] // Specify the common bundle's name.
+            })
   ],
     node: {
     // workaround for webpack-dev-server issue 

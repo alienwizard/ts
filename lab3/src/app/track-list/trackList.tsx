@@ -1,12 +1,11 @@
 import * as React from "react";
-import { track, weather, carConfig } from "../types/index";
+import { track, carConfig } from "../types/index";
 import { Ul } from "../styles/lists";
 import { Container, ArticleHeader, Section, Row } from "../styles/grid";
-import { Colors, Sizes } from "../styles/index";
+import { Sizes } from "../styles/index";
 import TrackComponent from "./track.component";
 import SearchComponent from "../shared/search.component";
 import styled from "styled-components";
-import Enzo from "../enzo/enzo.service";
 import "ionicons/dist/css/ionicons.min.css";
 
 type trackListProps = {
