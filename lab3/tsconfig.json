@@ -6,12 +6,18 @@
         "module": "commonjs",
         "target": "es6",
         "jsx": "react",
-        "allowJs": true,
+        "allowJs": false,
         "typeRoots": [
             "node_modules/@types/",
             "typings"
         ]
     },
+    "awesomeTypescriptLoaderOptions": {
+"useWebpackText": true,
+"useTranspileModule": true,
+"doTypeCheck": true,
+"forkChecker": true
+},
     "compileOnSave": true,
         "include": [
             "./**/*"

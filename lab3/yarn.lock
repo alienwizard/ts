@@ -601,9 +601,18 @@ babel-helpers@^6.23.0:
     babel-runtime "^6.22.0"
     babel-template "^6.23.0"
 
-babel-loader@^6.2.4, babel-loader@^6.4.0:
+babel-loader@^6.2.4:
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-6.4.0.tgz#e98c239662a22533b9e7a49594ef216d7635ea28"
+  dependencies:
+    find-cache-dir "^0.1.1"
+    loader-utils "^0.2.16"
+    mkdirp "^0.5.1"
+    object-assign "^4.0.1"
+
+babel-loader@^6.4.1:
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-6.4.1.tgz#0b34112d5b0748a8dcdbf51acf6f9bd42d50b8ca"
   dependencies:
     find-cache-dir "^0.1.1"
     loader-utils "^0.2.16"
@@ -1509,6 +1518,12 @@ bulk-require@^1.0.0:
   resolved "https://registry.yarnpkg.com/bulk-require/-/bulk-require-1.0.0.tgz#7c84e9dd25a0377c0d0deaa92072307141b43ca8"
   dependencies:
     glob "~3.2.7"
+
+bundle-loader@^0.5.5:
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/bundle-loader/-/bundle-loader-0.5.5.tgz#11fd7b08edf86a1d708efcb1eca62ca51f6c368a"
+  dependencies:
+    loader-utils "^1.0.2"
 
 bytes@2.3.0:
   version "2.3.0"
@@ -5742,6 +5757,10 @@ rc@^1.0.1, rc@^1.1.6, rc@~1.1.6:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-async-component@^1.0.0-alpha.1:
+  version "1.0.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/react-async-component/-/react-async-component-1.0.0-alpha.1.tgz#a04c0eaea5ca9149bfb5928b7ffc1e06a004b33c"
+
 react-docgen@^2.12.1:
   version "2.13.0"
   resolved "https://registry.yarnpkg.com/react-docgen/-/react-docgen-2.13.0.tgz#7fcc4a3104ea8d4fd428383ba38df11166837be9"
@@ -6836,6 +6855,12 @@ symbol-observable@^1.0.2:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.0.4.tgz#29bf615d4aa7121bdd898b22d4b3f9bc4e2aa03d"
 
+systemjs@^0.19.47:
+  version "0.19.47"
+  resolved "https://registry.yarnpkg.com/systemjs/-/systemjs-0.19.47.tgz#c8c93937180f3f5481c769cd2720763fb4a31c6f"
+  dependencies:
+    when "^3.7.5"
+
 tapable@^0.1.8, tapable@~0.1.8:
   version "0.1.10"
   resolved "https://registry.yarnpkg.com/tapable/-/tapable-0.1.10.tgz#29c35707c2b70e50d07482b5d202e8ed446dafd4"
@@ -7004,13 +7029,14 @@ ua-parser-js@0.7.12, ua-parser-js@^0.7.9:
   version "0.7.12"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.12.tgz#04c81a99bdd5dc52263ea29d24c6bf8d4818a4bb"
 
-uglify-js@2.8.x, uglify-js@^2.6, uglify-js@^2.7.5:
-  version "2.8.12"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.8.12.tgz#8a50f5d482243650b7108f6080aa3a6afe2a6c55"
+uglify-js@2.8.x, uglify-js@^2.6, uglify-js@^2.7.5, "uglify-js@git://github.com/mishoo/UglifyJS2#harmony":
+  version "2.8.15"
+  resolved "git://github.com/mishoo/UglifyJS2#9e2290b29c86caf847e291cf120ab23bea40544c"
   dependencies:
     source-map "~0.5.1"
-    uglify-to-browserify "~1.0.0"
     yargs "~3.10.0"
+  optionalDependencies:
+    uglify-to-browserify "~1.0.0"
 
 uglify-js@~2.7.3:
   version "2.7.5"
@@ -7024,6 +7050,13 @@ uglify-js@~2.7.3:
 uglify-to-browserify@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/uglify-to-browserify/-/uglify-to-browserify-1.0.2.tgz#6e0924d6bda6b5afe349e39a6d632850a0f882b7"
+
+uglifyjs-webpack-plugin@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/uglifyjs-webpack-plugin/-/uglifyjs-webpack-plugin-0.3.1.tgz#dbee23420c0d84534736a3723c63022a091410dd"
+  dependencies:
+    source-map "^0.5.6"
+    webpack-sources "^0.1.4"
 
 uid-number@~0.0.6:
   version "0.0.6"
@@ -7370,6 +7403,10 @@ weinre@^2.0.0-pre-I0Z7U9OV:
 whatwg-fetch@>=0.10.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-2.0.3.tgz#9c84ec2dcf68187ff00bc64e1274b442176e1c84"
+
+when@^3.7.5:
+  version "3.7.8"
+  resolved "https://registry.yarnpkg.com/when/-/when-3.7.8.tgz#c7130b6a7ea04693e842cdc9e7a1f2aa39a39f82"
 
 whet.extend@~0.9.9:
   version "0.9.9"
