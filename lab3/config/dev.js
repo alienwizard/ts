@@ -42,7 +42,7 @@ module.exports  =  function(env) {
             },
             { 
                 test: /\.tsx?$/,
-                exclude: [/(node_modules)/, 'vendor.js'],
+                exclude: ['/node_modules/', 'vendor.js', '/@types/'],
                  include: path.resolve(__dirname, '/'),
                 use: [
                     { loader: "awesome-typescript-loader", options:{

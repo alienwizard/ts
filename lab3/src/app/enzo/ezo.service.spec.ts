@@ -1,4 +1,4 @@
-import Enzo from '../src/app/enzo/enzo.service';
+import Enzo from './enzo.service';
 
 describe('Enzo service', () => {
 

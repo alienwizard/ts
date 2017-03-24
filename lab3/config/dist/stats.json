@@ -12,7 +12,7 @@
   ],
   "version": "2.2.1",
   "hash": "a6cf7633456580b06576",
-  "time": 143,
+  "time": 123,
   "publicPath": "/",
   "assetsByChunkName": {
     "vendor": [
@@ -21051,7 +21051,7 @@
       "index2": 304,
       "size": 760,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
