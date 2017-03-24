@@ -11,7 +11,7 @@ interface WeatherState {
 
 interface WeatherProps {
     forecastList: weather[];
-    selectForecast: (element: weather) => void;
+    selectForecast?: (element: weather) => void;
 }
 
 const TempWrap = styled.li`

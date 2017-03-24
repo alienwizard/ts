@@ -22,7 +22,7 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>0/22</span>
+        <span class='fraction'>0/25</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
@@ -32,12 +32,12 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/7</span>
+        <span class='fraction'>0/8</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>0/20</span>
+        <span class='fraction'>0/23</span>
       </div>
     </div>
   </div>
@@ -113,7 +113,12 @@
 68
 69
 70
-71</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+71
+72
+73
+74
+75
+76</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -123,6 +128,8 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -130,10 +137,13 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -191,32 +201,37 @@ import { Sizes <span class="cstat-no" title="statement not covered" >} from "../
 import TrackComp<span class="cstat-no" title="statement not covered" >onent from "./track.compone</span>nt";
 import SearchComponent fro<span class="cstat-no" title="statement not covered" >m "../shared/search.component</span>";
 import styled from "styled-<span class="cstat-no" title="statement not covered" >components";</span>
-//import "ionicons/dist/css/<span class="cstat-no" title="statement not covered" >ionicons.min.css";</span>
+import Enzo from "../enzo/en<span class="cstat-no" title="statement not covered" >zo.service";</span>
+//import "ionicons/dist<span class="cstat-no" title="statement not covered" >/css/ionicons.min.css";</span>
 <span class="cstat-no" title="statement not covered" ></span>
 type trackListProps = {
-    initialTracks: track[];
 };
 &nbsp;
 interface TrackListState {
     currentConfig: carConfig;
     currentTrack: track;
-<span class="fstat-no" title="function not covered" >    tr</span>ackArray: track[];
-}<span class="cstat-no" title="statement not covered" ></span>
-const Li<span class="cstat-no" title="statement not covered" >stWrap = styled(Ul)`</span>
-    display:flex;
-    flex<span class="cstat-no" title="statement not covered" >-flow:row;</span>
-    flex-wrap: wrap;
-<span class="fstat-no" title="function not covered" >    ju</span>stify-content:space-between;
-    widt<span class="cstat-no" title="statement not covered" >h:${Sizes.pageSize};</span>
-`;
-<span class="fstat-no" title="function not covered" ></span>
-export d<span class="cstat-no" title="statement not covered" >efault class TrackList e</span>xtends React.Component&lt;trackListProps, TrackListState&gt; {
-    cons<span class="cstat-no" title="statement not covered" >tructor(props: trackListProps) {</span>
-        super(props);
-        this.state = {currentTrack: null, currentConfig: null, trackArr<span class="fstat-no" title="function not covered" >ay</span>: this.pr<span class="cstat-no" title="statement not covered" >ops.initialTracks};</span>
-        // const initialTracks = this.props.initialTracks;
-<span class="fstat-no" title="function not covered" ></span>        this.filterTracks = this.filterTracks.bind(this)
+    trackArray: track[];
+}<span class="fstat-no" title="function not covered" ></span>
+const Li<span class="cstat-no" title="statement not covered" >stWrap = style</span>d(Ul)`
+    disp<span class="cstat-no" title="statement not covered" >lay:flex;</span>
+    flex-flow:row;
+    flex<span class="cstat-no" title="statement not covered" >-wrap: wrap;</span>
+    justify-content:space-between;
+<span class="fstat-no" title="function not covered" >    wi</span>dth:${Sizes.pageSize};
+`;<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" ></span>
+export default class TrackList extends React.Component&lt;trackListProps, TrackListState&gt; {
+<span class="fstat-no" title="function not covered" >    co</span>nstructor(props: trackListProps) {
+<span class="cstat-no" title="statement not covered" >        super(props);</span>
+        this.state = {currentTrack: null, currentConfig: null, trackArray: null};
+<span class="fstat-no" title="function not covered" ></span>        // const initialTracks = this.props.initialTracks;
+<span class="cstat-no" title="statement not covered" >        this.filterTracks = this</span>.filterTracks.bind(this)
     }<span class="cstat-no" title="statement not covered" ></span>
+&nbsp;
+     componentDidMount() {<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+         const tracks = Enzo.getTracks();
+<span class="fstat-no" title="function not covered" ></span>         this.setState({trackArray: tracks});
+     }<span class="cstat-no" title="statement not covered" ></span>
 &nbsp;
     updateCurrentTrack(track: track) {
         this.setState({ currentTrack:  track})
@@ -259,7 +274,7 @@ export d<span class="cstat-no" title="statement not covered" >efault class Track
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Mar 24 2017 14:44:48 GMT+0100 (CET)
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Mar 24 2017 16:35:34 GMT+0100 (CET)
 </div>
 </div>
 <script src="../../../prettify.js"></script>

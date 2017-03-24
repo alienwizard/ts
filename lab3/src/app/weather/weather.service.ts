@@ -11,9 +11,6 @@ const foreCast: weather[] = [
 ];
 
 export default class WeatherService {
-    constructor() {
-        
-    }
     static getForecast(): weather[] {
         return foreCast;
     }

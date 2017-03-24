@@ -1,18 +1,23 @@
 {
-  "errors": [],
+  "errors": [
+    "[at-loader] \u001b[31m./src/app/track-list/track-list.component.tsx\u001b[39m:47:49 \n    TS2339: \u001b[31mProperty 'initialTracks' does not exist on type 'Readonly<{ children?: ReactNode; }> & Readonly<trackListProps>'.\u001b[39m"
+  ],
   "warnings": [
     "./src/main.tsx\n[6, 40]: ' should be \"\n\n @ multi (webpack)-dev-server/client?http://127.0.0.1:8080 webpack/hot/dev-server ./main.tsx",
     "./src/app/home/index.tsx\n[2, 32]: ' should be \"\n[5, 32]: ' should be \"\n\n @ ./src/app/app.tsx 6:13-30\n @ ./src/main.tsx\n @ multi (webpack)-dev-server/client?http://127.0.0.1:8080 webpack/hot/dev-server ./main.tsx",
     "./src/app/trackview/index.tsx\n[1, 32]: ' should be \"\n[5, 32]: ' should be \"\n\n @ ./src/app/app.tsx 7:9-32\n @ ./src/main.tsx\n @ multi (webpack)-dev-server/client?http://127.0.0.1:8080 webpack/hot/dev-server ./main.tsx",
+    "./src/app/track-list/index.tsx\n[2, 32]: ' should be \"\n[5, 32]: ' should be \"\n\n @ ./src/app/app.tsx 8:19-42\n @ ./src/main.tsx\n @ multi (webpack)-dev-server/client?http://127.0.0.1:8080 webpack/hot/dev-server ./main.tsx",
+    "./src/app/track-list/track-list.component.tsx\n[10, 3]: comment must start with a space\n\n @ ./src/app/track-list/index.tsx 8:15-54\n @ ./src/app/app.tsx\n @ ./src/main.tsx\n @ multi (webpack)-dev-server/client?http://127.0.0.1:8080 webpack/hot/dev-server ./main.tsx",
     "./src/app/trackview/weather.component.tsx\n[65, 21]: ' should be \"\n\n @ ./src/app/trackview/track-view.component.tsx 22:26-56\n @ ./src/app/trackview/index.tsx\n @ ./src/app/app.tsx\n @ ./src/main.tsx\n @ multi (webpack)-dev-server/client?http://127.0.0.1:8080 webpack/hot/dev-server ./main.tsx",
-    "./src/app/weather/weather.service.ts\n[15, 1]: trailing whitespace\n\n @ ./src/app/trackview/track-view.component.tsx 23:24-61\n @ ./src/app/trackview/index.tsx\n @ ./src/app/app.tsx\n @ ./src/main.tsx\n @ multi (webpack)-dev-server/client?http://127.0.0.1:8080 webpack/hot/dev-server ./main.tsx",
+    "./src/app/track-list/track.component.tsx\n[95, 42]: ' should be \"\n[95, 65]: ' should be \"\n\n @ ./src/app/track-list/track-list.component.tsx 20:24-52\n @ ./src/app/track-list/index.tsx\n @ ./src/app/app.tsx\n @ ./src/main.tsx\n @ multi (webpack)-dev-server/client?http://127.0.0.1:8080 webpack/hot/dev-server ./main.tsx",
+    "./src/app/shared/search.component.tsx\n[42, 21]: ' should be \"\n\n @ ./src/app/track-list/track-list.component.tsx 21:25-62\n @ ./src/app/track-list/index.tsx\n @ ./src/app/app.tsx\n @ ./src/main.tsx\n @ multi (webpack)-dev-server/client?http://127.0.0.1:8080 webpack/hot/dev-server ./main.tsx",
     "./src/app/types/index.ts\n[1, 24]: ' should be \"\n[1, 48]: ' should be \"\n[1, 57]: ' should be \"\n\n @ ./src/app/enzo/enzo.service.ts 8:14-39\n @ ./src/app/trackview/track-view.component.tsx\n @ ./src/app/trackview/index.tsx\n @ ./src/app/app.tsx\n @ ./src/main.tsx\n @ multi (webpack)-dev-server/client?http://127.0.0.1:8080 webpack/hot/dev-server ./main.tsx",
     "asset size limit: The following asset(s) exceed the recommended size limit (250 kB).\nThis can impact web performance.\nAssets: \n  vendor.js (1.27 MB)\n  main.js (1.79 MB)",
     "entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (250 kB). This can impact web performance.\nEntrypoints:\n  main (1.79 MB)\n      main.js\n,\n  vendor (1.27 MB)\n      vendor.js\n"
   ],
   "version": "2.2.1",
-  "hash": "a6cf7633456580b06576",
-  "time": 123,
+  "hash": "f3428e9fe88126f8afd5",
+  "time": 382,
   "publicPath": "/",
   "assetsByChunkName": {
     "vendor": [
@@ -27,7 +32,7 @@
   "assets": [
     {
       "name": "0-0.js",
-      "size": 59158,
+      "size": 59133,
       "chunks": [
         0
       ],
@@ -36,7 +41,7 @@
     },
     {
       "name": "1-1.js",
-      "size": 803,
+      "size": 939,
       "chunks": [
         1
       ],
@@ -57,7 +62,7 @@
     },
     {
       "name": "main.js",
-      "size": 1786529,
+      "size": 1787373,
       "chunks": [
         3
       ],
@@ -68,8 +73,17 @@
       "isOverSizeLimit": true
     },
     {
+      "name": "4-4.js",
+      "size": 42785,
+      "chunks": [
+        4
+      ],
+      "chunkNames": [],
+      "emitted": false
+    },
+    {
       "name": "0-0.js.map",
-      "size": 150445,
+      "size": 150237,
       "chunks": [
         0
       ],
@@ -78,7 +92,7 @@
     },
     {
       "name": "1-1.js.map",
-      "size": 2107,
+      "size": 2483,
       "chunks": [
         1
       ],
@@ -98,13 +112,22 @@
     },
     {
       "name": "main.js.map",
-      "size": 2058726,
+      "size": 2059382,
       "chunks": [
         3
       ],
       "chunkNames": [
         "main"
       ],
+      "emitted": false
+    },
+    {
+      "name": "4-4.js.map",
+      "size": 132122,
+      "chunks": [
+        4
+      ],
+      "chunkNames": [],
       "emitted": false
     }
   ],
@@ -137,13 +160,13 @@
       "initial": false,
       "entry": false,
       "extraAsync": false,
-      "size": 66011,
+      "size": 65962,
       "names": [],
       "files": [
         "0-0.js",
         "0-0.js.map"
       ],
-      "hash": "e6c7822bbe613ca78e5d",
+      "hash": "2768b245c492604ba651",
       "parents": [
         3
       ],
@@ -165,13 +188,13 @@
       "initial": false,
       "entry": false,
       "extraAsync": false,
-      "size": 760,
+      "size": 921,
       "names": [],
       "files": [
         "1-1.js",
         "1-1.js.map"
       ],
-      "hash": "1ac1376f5138557bfaad",
+      "hash": "61a62404f32ce958e84b",
       "parents": [
         3
       ],
@@ -221,7 +244,7 @@
       "initial": true,
       "entry": true,
       "extraAsync": false,
-      "size": 1701773,
+      "size": 1702343,
       "names": [
         "main"
       ],
@@ -229,7 +252,7 @@
         "main.js",
         "main.js.map"
       ],
-      "hash": "7615e4e7ef4caa894fa3",
+      "hash": "964eda72d899237065d6",
       "parents": [],
       "origins": [
         {
@@ -239,6 +262,34 @@
           "moduleName": "multi (webpack)-dev-server/client?http://127.0.0.1:8080 webpack/hot/dev-server ./main.tsx",
           "loc": "",
           "name": "main",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "extraAsync": false,
+      "size": 46964,
+      "names": [],
+      "files": [
+        "4-4.js",
+        "4-4.js.map"
+      ],
+      "hash": "26c8e9865b8f41fc2320",
+      "parents": [
+        3
+      ],
+      "origins": [
+        {
+          "moduleId": 377,
+          "module": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/index.tsx",
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/index.tsx",
+          "moduleName": "./src/app/track-list/index.tsx",
+          "loc": "8:15-54",
+          "name": null,
           "reasons": []
         }
       ]
@@ -1271,9 +1322,9 @@
         3
       ],
       "assets": [],
-      "issuer": "/home/johanwendin/Dev/ts/lab3/node_modules/react/lib/ReactComponent.js",
-      "issuerId": 70,
-      "issuerName": "./~/react/lib/ReactComponent.js",
+      "issuer": "/home/johanwendin/Dev/ts/lab3/node_modules/react/lib/ReactClass.js",
+      "issuerId": 256,
+      "issuerName": "./~/react/lib/ReactClass.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -3849,6 +3900,51 @@
           "type": "cjs require",
           "userRequest": "react",
           "loc": "19:12-28"
+        },
+        {
+          "moduleId": 377,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/index.tsx",
+          "module": "./src/app/track-list/index.tsx",
+          "moduleName": "./src/app/track-list/index.tsx",
+          "type": "cjs require",
+          "userRequest": "react",
+          "loc": "4:12-28"
+        },
+        {
+          "moduleId": 378,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/track-list.component.tsx",
+          "module": "./src/app/track-list/track-list.component.tsx",
+          "moduleName": "./src/app/track-list/track-list.component.tsx",
+          "type": "cjs require",
+          "userRequest": "react",
+          "loc": "16:12-28"
+        },
+        {
+          "moduleId": 379,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/shared/search.component.tsx",
+          "module": "./src/app/shared/search.component.tsx",
+          "moduleName": "./src/app/shared/search.component.tsx",
+          "type": "cjs require",
+          "userRequest": "react",
+          "loc": "18:12-28"
+        },
+        {
+          "moduleId": 382,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/track.component.tsx",
+          "module": "./src/app/track-list/track.component.tsx",
+          "moduleName": "./src/app/track-list/track.component.tsx",
+          "type": "cjs require",
+          "userRequest": "react",
+          "loc": "14:12-28"
+        },
+        {
+          "moduleId": 383,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/react-overdrive/lib/Overdrive.min.js",
+          "module": "./~/react-overdrive/lib/Overdrive.min.js",
+          "moduleName": "./~/react-overdrive/lib/Overdrive.min.js",
+          "type": "cjs require",
+          "userRequest": "react",
+          "loc": "1:82-98"
         }
       ],
       "usedExports": true,
@@ -5766,9 +5862,9 @@
         3
       ],
       "assets": [],
-      "issuer": "/home/johanwendin/Dev/ts/lab3/node_modules/react/lib/ReactComponent.js",
-      "issuerId": 70,
-      "issuerName": "./~/react/lib/ReactComponent.js",
+      "issuer": "/home/johanwendin/Dev/ts/lab3/node_modules/react/lib/ReactClass.js",
+      "issuerId": 256,
+      "issuerName": "./~/react/lib/ReactClass.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -6365,9 +6461,9 @@
         3
       ],
       "assets": [],
-      "issuer": "/home/johanwendin/Dev/ts/lab3/node_modules/react/lib/ReactComponent.js",
-      "issuerId": 70,
-      "issuerName": "./~/react/lib/ReactComponent.js",
+      "issuer": "/home/johanwendin/Dev/ts/lab3/node_modules/react/lib/ReactPureComponent.js",
+      "issuerId": 259,
+      "issuerName": "./~/react/lib/ReactPureComponent.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -8809,9 +8905,9 @@
         3
       ],
       "assets": [],
-      "issuer": "/home/johanwendin/Dev/ts/lab3/node_modules/react/lib/ReactComponent.js",
-      "issuerId": 70,
-      "issuerName": "./~/react/lib/ReactComponent.js",
+      "issuer": "/home/johanwendin/Dev/ts/lab3/node_modules/react/lib/ReactPureComponent.js",
+      "issuerId": 259,
+      "issuerName": "./~/react/lib/ReactPureComponent.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -11022,9 +11118,9 @@
         3
       ],
       "assets": [],
-      "issuer": "/home/johanwendin/Dev/ts/lab3/node_modules/sockjs-client/lib/transport/sender/xhr-cors.js",
-      "issuerId": 49,
-      "issuerName": "./~/sockjs-client/lib/transport/sender/xhr-cors.js",
+      "issuer": "/home/johanwendin/Dev/ts/lab3/node_modules/sockjs-client/lib/transport/sender/xhr-local.js",
+      "issuerId": 38,
+      "issuerName": "./~/sockjs-client/lib/transport/sender/xhr-local.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -11612,6 +11708,15 @@
           "loc": "vendor:100006"
         },
         {
+          "moduleId": 364,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/home/home.component.tsx",
+          "module": "./src/app/home/home.component.tsx",
+          "moduleName": "./src/app/home/home.component.tsx",
+          "type": "cjs require",
+          "userRequest": "react-router-dom",
+          "loc": "10:25-52"
+        },
+        {
           "moduleId": 365,
           "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/trackview/track-view.component.tsx",
           "module": "./src/app/trackview/track-view.component.tsx",
@@ -11619,6 +11724,15 @@
           "type": "cjs require",
           "userRequest": "react-router-dom",
           "loc": "26:25-52"
+        },
+        {
+          "moduleId": 382,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/track.component.tsx",
+          "module": "./src/app/track-list/track.component.tsx",
+          "moduleName": "./src/app/track-list/track.component.tsx",
+          "type": "cjs require",
+          "userRequest": "react-router-dom",
+          "loc": "19:25-52"
         }
       ],
       "usedExports": true,
@@ -11680,6 +11794,15 @@
           "type": "single entry",
           "userRequest": "react-dom",
           "loc": "vendor:100003"
+        },
+        {
+          "moduleId": 383,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/react-overdrive/lib/Overdrive.min.js",
+          "module": "./~/react-overdrive/lib/Overdrive.min.js",
+          "moduleName": "./~/react-overdrive/lib/Overdrive.min.js",
+          "type": "cjs require",
+          "userRequest": "react-dom",
+          "loc": "1:99-119"
         }
       ],
       "usedExports": true,
@@ -11729,8 +11852,8 @@
       "id": 131,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/css-loader/index.js!/home/johanwendin/Dev/ts/lab3/assets/css/global.css",
       "name": "./~/css-loader!./assets/css/global.css",
-      "index": 333,
-      "index2": 331,
+      "index": 340,
+      "index2": 338,
       "size": 448,
       "cacheable": true,
       "built": false,
@@ -12588,8 +12711,8 @@
       "id": 153,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/lodash-es/isPlainObject.js",
       "name": "./~/lodash-es/isPlainObject.js",
-      "index": 348,
-      "index2": 351,
+      "index": 355,
+      "index2": 358,
       "size": 1648,
       "cacheable": true,
       "built": false,
@@ -12919,6 +13042,15 @@
           "type": "cjs require",
           "userRequest": "react-async-component",
           "loc": "4:30-62"
+        },
+        {
+          "moduleId": 377,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/index.tsx",
+          "module": "./src/app/track-list/index.tsx",
+          "moduleName": "./src/app/track-list/index.tsx",
+          "type": "cjs require",
+          "userRequest": "react-async-component",
+          "loc": "5:30-62"
         }
       ],
       "usedExports": true,
@@ -15628,8 +15760,8 @@
       "id": 232,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/react-redux/es/utils/warning.js",
       "name": "./~/react-redux/es/utils/warning.js",
-      "index": 339,
-      "index2": 336,
+      "index": 346,
+      "index2": 343,
       "size": 637,
       "cacheable": true,
       "built": false,
@@ -18480,8 +18612,8 @@
       "id": 303,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/redux/es/index.js",
       "name": "./~/redux/es/index.js",
-      "index": 346,
-      "index2": 361,
+      "index": 353,
+      "index2": 368,
       "size": 1077,
       "cacheable": true,
       "built": false,
@@ -18532,8 +18664,8 @@
       "id": 304,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/lodash-es/_Symbol.js",
       "name": "./~/lodash-es/_Symbol.js",
-      "index": 350,
-      "index2": 344,
+      "index": 357,
+      "index2": 351,
       "size": 116,
       "cacheable": true,
       "built": false,
@@ -18628,8 +18760,8 @@
       "id": 306,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/react-redux/es/components/connectAdvanced.js",
       "name": "./~/react-redux/es/components/connectAdvanced.js",
-      "index": 340,
-      "index2": 340,
+      "index": 347,
+      "index2": 347,
       "size": 13510,
       "cacheable": true,
       "built": false,
@@ -18678,8 +18810,8 @@
       "id": 307,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/react-redux/es/connect/wrapMapToProps.js",
       "name": "./~/react-redux/es/connect/wrapMapToProps.js",
-      "index": 366,
-      "index2": 363,
+      "index": 373,
+      "index2": 370,
       "size": 2797,
       "cacheable": true,
       "built": false,
@@ -18731,8 +18863,8 @@
       "id": 308,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/react-redux/es/utils/PropTypes.js",
       "name": "./~/react-redux/es/utils/PropTypes.js",
-      "index": 338,
-      "index2": 335,
+      "index": 345,
+      "index2": 342,
       "size": 429,
       "cacheable": true,
       "built": false,
@@ -18783,8 +18915,8 @@
       "id": 309,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/react-redux/es/utils/verifyPlainObject.js",
       "name": "./~/react-redux/es/utils/verifyPlainObject.js",
-      "index": 367,
-      "index2": 362,
+      "index": 374,
+      "index2": 369,
       "size": 314,
       "cacheable": true,
       "built": false,
@@ -18833,8 +18965,8 @@
       "id": 310,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/react-router-redux/lib/actions.js",
       "name": "./~/react-router-redux/lib/actions.js",
-      "index": 374,
-      "index2": 372,
+      "index": 381,
+      "index2": 379,
       "size": 1264,
       "cacheable": true,
       "built": false,
@@ -18879,8 +19011,8 @@
       "id": 311,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/react-router-redux/lib/reducer.js",
       "name": "./~/react-router-redux/lib/reducer.js",
-      "index": 373,
-      "index2": 371,
+      "index": 380,
+      "index2": 378,
       "size": 1271,
       "cacheable": true,
       "built": false,
@@ -18925,8 +19057,8 @@
       "id": 312,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/redux/es/compose.js",
       "name": "./~/redux/es/compose.js",
-      "index": 365,
-      "index2": 359,
+      "index": 372,
+      "index2": 366,
       "size": 965,
       "cacheable": true,
       "built": false,
@@ -18975,8 +19107,8 @@
       "id": 313,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/redux/es/createStore.js",
       "name": "./~/redux/es/createStore.js",
-      "index": 347,
-      "index2": 355,
+      "index": 354,
+      "index2": 362,
       "size": 8795,
       "cacheable": true,
       "built": false,
@@ -19027,8 +19159,8 @@
       "id": 314,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/redux/es/utils/warning.js",
       "name": "./~/redux/es/utils/warning.js",
-      "index": 362,
-      "index2": 356,
+      "index": 369,
+      "index2": 363,
       "size": 637,
       "cacheable": true,
       "built": false,
@@ -19077,8 +19209,8 @@
       "id": 315,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/url-loader/index.js!/home/johanwendin/Dev/ts/lab3/assets/fonts/OpenSans-Regular.ttf",
       "name": "./assets/fonts/OpenSans-Regular.ttf",
-      "index": 334,
-      "index2": 330,
+      "index": 341,
+      "index2": 337,
       "size": 289870,
       "cacheable": true,
       "built": false,
@@ -19124,7 +19256,7 @@
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/main.tsx",
       "name": "./src/main.tsx",
       "index": 87,
-      "index2": 333,
+      "index2": 340,
       "size": 463,
       "cacheable": true,
       "built": false,
@@ -19160,8 +19292,8 @@
       "id": 317,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/react-redux/es/index.js",
       "name": "./~/react-redux/es/index.js",
-      "index": 336,
-      "index2": 370,
+      "index": 343,
+      "index2": 377,
       "size": 194,
       "cacheable": true,
       "built": false,
@@ -19201,8 +19333,8 @@
       "id": 318,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/react-router-redux/lib/index.js",
       "name": "./~/react-router-redux/lib/index.js",
-      "index": 372,
-      "index2": 375,
+      "index": 379,
+      "index2": 382,
       "size": 1968,
       "cacheable": true,
       "built": false,
@@ -19309,6 +19441,51 @@
           "type": "cjs require",
           "userRequest": "styled-components",
           "loc": "22:26-54"
+        },
+        {
+          "moduleId": 378,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/track-list.component.tsx",
+          "module": "./src/app/track-list/track-list.component.tsx",
+          "moduleName": "./src/app/track-list/track-list.component.tsx",
+          "type": "cjs require",
+          "userRequest": "styled-components",
+          "loc": "22:26-54"
+        },
+        {
+          "moduleId": 379,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/shared/search.component.tsx",
+          "module": "./src/app/shared/search.component.tsx",
+          "moduleName": "./src/app/shared/search.component.tsx",
+          "type": "cjs require",
+          "userRequest": "styled-components",
+          "loc": "19:26-54"
+        },
+        {
+          "moduleId": 380,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/styles/buttons.ts",
+          "module": "./src/app/styles/buttons.ts",
+          "moduleName": "./src/app/styles/buttons.ts",
+          "type": "cjs require",
+          "userRequest": "styled-components",
+          "loc": "10:26-54"
+        },
+        {
+          "moduleId": 381,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/styles/mixins.ts",
+          "module": "./src/app/styles/mixins.ts",
+          "moduleName": "./src/app/styles/mixins.ts",
+          "type": "cjs require",
+          "userRequest": "styled-components",
+          "loc": "8:26-54"
+        },
+        {
+          "moduleId": 382,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/track.component.tsx",
+          "module": "./src/app/track-list/track.component.tsx",
+          "moduleName": "./src/app/track-list/track.component.tsx",
+          "type": "cjs require",
+          "userRequest": "styled-components",
+          "loc": "15:26-54"
         }
       ],
       "usedExports": true,
@@ -19420,8 +19597,8 @@
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/app.tsx",
       "name": "./src/app/app.tsx",
       "index": 264,
-      "index2": 329,
-      "size": 1023,
+      "index2": 336,
+      "size": 1073,
       "cacheable": true,
       "built": false,
       "optional": false,
@@ -19450,14 +19627,14 @@
       "usedExports": true,
       "providedExports": null,
       "depth": 2,
-      "source": "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar React = require(\"react\");\nvar react_router_dom_1 = require(\"react-router-dom\");\nvar home_1 = require(\"./home\");\nvar _1 = require(\"./trackview/\");\nvar header_1 = require(\"./header/header\");\nvar no_match_component_1 = require(\"./shared/no-match.component\");\n/**Home route not rendering the component */\nexports.default = function () {\n    return React.createElement(react_router_dom_1.BrowserRouter, null, React.createElement(\"div\", null, React.createElement(header_1.default, null), React.createElement(react_router_dom_1.Switch, null, React.createElement(react_router_dom_1.Route, { exact: true, path: \"/\", component: home_1.default }), React.createElement(react_router_dom_1.Route, { exact: true, path: \"/tracks\", component: home_1.default }), React.createElement(react_router_dom_1.Route, { path: \"/track/:trackId\", component: _1.default }), React.createElement(react_router_dom_1.Route, { component: no_match_component_1.default }))));\n};"
+      "source": "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar React = require(\"react\");\nvar react_router_dom_1 = require(\"react-router-dom\");\nvar home_1 = require(\"./home\");\nvar _1 = require(\"./trackview/\");\nvar track_list_1 = require(\"./track-list\");\nvar header_1 = require(\"./header/header\");\nvar no_match_component_1 = require(\"./shared/no-match.component\");\n/**Home route not rendering the component */\nexports.default = function () {\n    return React.createElement(react_router_dom_1.BrowserRouter, null, React.createElement(\"div\", null, React.createElement(header_1.default, null), React.createElement(react_router_dom_1.Switch, null, React.createElement(react_router_dom_1.Route, { exact: true, path: \"/\", component: home_1.default }), React.createElement(react_router_dom_1.Route, { exact: true, path: \"/tracks\", component: track_list_1.default }), React.createElement(react_router_dom_1.Route, { path: \"/track/:trackId\", component: _1.default }), React.createElement(react_router_dom_1.Route, { component: no_match_component_1.default }))));\n};"
     },
     {
       "id": 323,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/header/club-bar.components.tsx",
       "name": "./src/app/header/club-bar.components.tsx",
-      "index": 329,
-      "index2": 325,
+      "index": 336,
+      "index2": 332,
       "size": 731,
       "cacheable": true,
       "built": false,
@@ -19493,8 +19670,8 @@
       "id": 324,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/header/header.tsx",
       "name": "./src/app/header/header.tsx",
-      "index": 328,
-      "index2": 327,
+      "index": 335,
+      "index2": 334,
       "size": 1274,
       "cacheable": true,
       "built": false,
@@ -19518,7 +19695,7 @@
           "moduleName": "./src/app/app.tsx",
           "type": "cjs require",
           "userRequest": "./header/header",
-          "loc": "8:15-41"
+          "loc": "9:15-41"
         }
       ],
       "usedExports": true,
@@ -19567,8 +19744,8 @@
       "id": 326,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/shared/no-match.component.tsx",
       "name": "./src/app/shared/no-match.component.tsx",
-      "index": 331,
-      "index2": 328,
+      "index": 338,
+      "index2": 335,
       "size": 2255,
       "cacheable": true,
       "built": false,
@@ -19592,7 +19769,7 @@
           "moduleName": "./src/app/app.tsx",
           "type": "cjs require",
           "userRequest": "./shared/no-match.component",
-          "loc": "9:27-65"
+          "loc": "10:27-65"
         }
       ],
       "usedExports": true,
@@ -19715,8 +19892,8 @@
       "id": 330,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/hoist-non-react-statics/index.js",
       "name": "./~/hoist-non-react-statics/index.js",
-      "index": 341,
-      "index2": 338,
+      "index": 348,
+      "index2": 345,
       "size": 1387,
       "cacheable": true,
       "built": false,
@@ -19828,8 +20005,8 @@
       "id": 333,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/lodash-es/_baseGetTag.js",
       "name": "./~/lodash-es/_baseGetTag.js",
-      "index": 349,
-      "index2": 347,
+      "index": 356,
+      "index2": 354,
       "size": 790,
       "cacheable": true,
       "built": false,
@@ -19869,8 +20046,8 @@
       "id": 334,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/lodash-es/_freeGlobal.js",
       "name": "./~/lodash-es/_freeGlobal.js",
-      "index": 352,
-      "index2": 342,
+      "index": 359,
+      "index2": 349,
       "size": 171,
       "cacheable": true,
       "built": false,
@@ -19910,8 +20087,8 @@
       "id": 335,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/lodash-es/_getPrototype.js",
       "name": "./~/lodash-es/_getPrototype.js",
-      "index": 355,
-      "index2": 349,
+      "index": 362,
+      "index2": 356,
       "size": 161,
       "cacheable": true,
       "built": false,
@@ -19951,8 +20128,8 @@
       "id": 336,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/lodash-es/_getRawTag.js",
       "name": "./~/lodash-es/_getRawTag.js",
-      "index": 353,
-      "index2": 345,
+      "index": 360,
+      "index2": 352,
       "size": 1137,
       "cacheable": true,
       "built": false,
@@ -19992,8 +20169,8 @@
       "id": 337,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/lodash-es/_objectToString.js",
       "name": "./~/lodash-es/_objectToString.js",
-      "index": 354,
-      "index2": 346,
+      "index": 361,
+      "index2": 353,
       "size": 563,
       "cacheable": true,
       "built": false,
@@ -20033,8 +20210,8 @@
       "id": 338,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/lodash-es/_overArg.js",
       "name": "./~/lodash-es/_overArg.js",
-      "index": 356,
-      "index2": 348,
+      "index": 363,
+      "index2": 355,
       "size": 380,
       "cacheable": true,
       "built": false,
@@ -20074,8 +20251,8 @@
       "id": 339,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/lodash-es/_root.js",
       "name": "./~/lodash-es/_root.js",
-      "index": 351,
-      "index2": 343,
+      "index": 358,
+      "index2": 350,
       "size": 298,
       "cacheable": true,
       "built": false,
@@ -20115,8 +20292,8 @@
       "id": 340,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/lodash-es/isObjectLike.js",
       "name": "./~/lodash-es/isObjectLike.js",
-      "index": 357,
-      "index2": 350,
+      "index": 364,
+      "index2": 357,
       "size": 612,
       "cacheable": true,
       "built": false,
@@ -20230,8 +20407,8 @@
       "id": 343,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/react-redux/es/components/Provider.js",
       "name": "./~/react-redux/es/components/Provider.js",
-      "index": 337,
-      "index2": 337,
+      "index": 344,
+      "index2": 344,
       "size": 2659,
       "cacheable": true,
       "built": false,
@@ -20271,8 +20448,8 @@
       "id": 344,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/react-redux/es/connect/connect.js",
       "name": "./~/react-redux/es/connect/connect.js",
-      "index": 343,
-      "index2": 369,
+      "index": 350,
+      "index2": 376,
       "size": 5344,
       "cacheable": true,
       "built": false,
@@ -20313,8 +20490,8 @@
       "id": 345,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/react-redux/es/connect/mapDispatchToProps.js",
       "name": "./~/react-redux/es/connect/mapDispatchToProps.js",
-      "index": 345,
-      "index2": 364,
+      "index": 352,
+      "index2": 371,
       "size": 909,
       "cacheable": true,
       "built": false,
@@ -20357,8 +20534,8 @@
       "id": 346,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/react-redux/es/connect/mapStateToProps.js",
       "name": "./~/react-redux/es/connect/mapStateToProps.js",
-      "index": 368,
-      "index2": 365,
+      "index": 375,
+      "index2": 372,
       "size": 507,
       "cacheable": true,
       "built": false,
@@ -20400,8 +20577,8 @@
       "id": 347,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/react-redux/es/connect/mergeProps.js",
       "name": "./~/react-redux/es/connect/mergeProps.js",
-      "index": 369,
-      "index2": 366,
+      "index": 376,
+      "index2": 373,
       "size": 1620,
       "cacheable": true,
       "built": false,
@@ -20445,8 +20622,8 @@
       "id": 348,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/react-redux/es/connect/selectorFactory.js",
       "name": "./~/react-redux/es/connect/selectorFactory.js",
-      "index": 370,
-      "index2": 368,
+      "index": 377,
+      "index2": 375,
       "size": 4112,
       "cacheable": true,
       "built": false,
@@ -20488,8 +20665,8 @@
       "id": 349,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/react-redux/es/connect/verifySubselectors.js",
       "name": "./~/react-redux/es/connect/verifySubselectors.js",
-      "index": 371,
-      "index2": 367,
+      "index": 378,
+      "index2": 374,
       "size": 764,
       "cacheable": true,
       "built": false,
@@ -20529,8 +20706,8 @@
       "id": 350,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/react-redux/es/utils/Subscription.js",
       "name": "./~/react-redux/es/utils/Subscription.js",
-      "index": 342,
-      "index2": 339,
+      "index": 349,
+      "index2": 346,
       "size": 2591,
       "cacheable": true,
       "built": false,
@@ -20570,8 +20747,8 @@
       "id": 351,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/react-redux/es/utils/shallowEqual.js",
       "name": "./~/react-redux/es/utils/shallowEqual.js",
-      "index": 344,
-      "index2": 341,
+      "index": 351,
+      "index2": 348,
       "size": 677,
       "cacheable": true,
       "built": false,
@@ -20611,8 +20788,8 @@
       "id": 352,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/react-router-redux/lib/middleware.js",
       "name": "./~/react-router-redux/lib/middleware.js",
-      "index": 376,
-      "index2": 374,
+      "index": 383,
+      "index2": 381,
       "size": 1018,
       "cacheable": true,
       "built": false,
@@ -20648,8 +20825,8 @@
       "id": 353,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/react-router-redux/lib/sync.js",
       "name": "./~/react-router-redux/lib/sync.js",
-      "index": 375,
-      "index2": 373,
+      "index": 382,
+      "index2": 380,
       "size": 5799,
       "cacheable": true,
       "built": false,
@@ -20685,8 +20862,8 @@
       "id": 354,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/redux/es/applyMiddleware.js",
       "name": "./~/redux/es/applyMiddleware.js",
-      "index": 364,
-      "index2": 360,
+      "index": 371,
+      "index2": 367,
       "size": 1805,
       "cacheable": true,
       "built": false,
@@ -20726,8 +20903,8 @@
       "id": 355,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/redux/es/bindActionCreators.js",
       "name": "./~/redux/es/bindActionCreators.js",
-      "index": 363,
-      "index2": 358,
+      "index": 370,
+      "index2": 365,
       "size": 1975,
       "cacheable": true,
       "built": false,
@@ -20767,8 +20944,8 @@
       "id": 356,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/redux/es/combineReducers.js",
       "name": "./~/redux/es/combineReducers.js",
-      "index": 361,
-      "index2": 357,
+      "index": 368,
+      "index2": 364,
       "size": 5581,
       "cacheable": true,
       "built": false,
@@ -20808,8 +20985,8 @@
       "id": 357,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/style-loader/index.js!/home/johanwendin/Dev/ts/lab3/node_modules/css-loader/index.js!/home/johanwendin/Dev/ts/lab3/assets/css/global.css",
       "name": "./assets/css/global.css",
-      "index": 332,
-      "index2": 332,
+      "index": 339,
+      "index2": 339,
       "size": 914,
       "cacheable": true,
       "built": false,
@@ -20845,8 +21022,8 @@
       "id": 358,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/svg-url-loader/index.js??ref--8!/home/johanwendin/Dev/ts/lab3/assets/F1_logo.svg",
       "name": "./assets/F1_logo.svg",
-      "index": 330,
-      "index2": 326,
+      "index": 337,
+      "index2": 333,
       "size": 5479,
       "cacheable": true,
       "built": false,
@@ -20882,8 +21059,8 @@
       "id": 359,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/symbol-observable/index.js",
       "name": "./~/symbol-observable/index.js",
-      "index": 358,
-      "index2": 354,
+      "index": 365,
+      "index2": 361,
       "size": 41,
       "cacheable": true,
       "built": false,
@@ -20921,8 +21098,8 @@
       "id": 360,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/symbol-observable/lib/index.js",
       "name": "./~/symbol-observable/lib/index.js",
-      "index": 359,
-      "index2": 353,
+      "index": 366,
+      "index2": 360,
       "size": 661,
       "cacheable": true,
       "built": false,
@@ -20958,8 +21135,8 @@
       "id": 361,
       "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/symbol-observable/lib/ponyfill.js",
       "name": "./~/symbol-observable/lib/ponyfill.js",
-      "index": 360,
-      "index2": 352,
+      "index": 367,
+      "index2": 359,
       "size": 449,
       "cacheable": true,
       "built": false,
@@ -20996,7 +21173,7 @@
       "identifier": "multi /home/johanwendin/Dev/ts/lab3/node_modules/webpack-dev-server/client/index.js?http://127.0.0.1:8080 webpack/hot/dev-server ./main.tsx",
       "name": "multi (webpack)-dev-server/client?http://127.0.0.1:8080 webpack/hot/dev-server ./main.tsx",
       "index": 0,
-      "index2": 334,
+      "index2": 341,
       "size": 52,
       "cacheable": true,
       "built": false,
@@ -21021,8 +21198,8 @@
       "id": 363,
       "identifier": "multi /home/johanwendin/Dev/ts/lab3/node_modules/webpack-dev-server/client/index.js?http://127.0.0.1:8080 webpack/hot/dev-server react react-dom react-redux react-router react-router-dom react-router-redux redux",
       "name": "multi (webpack)-dev-server/client?http://127.0.0.1:8080 webpack/hot/dev-server react react-dom react-redux react-router react-router-dom react-router-redux redux",
-      "index": 335,
-      "index2": 376,
+      "index": 342,
+      "index2": 383,
       "size": 124,
       "cacheable": true,
       "built": false,
@@ -21049,9 +21226,9 @@
       "name": "./src/app/home/home.component.tsx",
       "index": 307,
       "index2": 304,
-      "size": 760,
+      "size": 921,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -21078,7 +21255,7 @@
       "usedExports": true,
       "providedExports": null,
       "depth": 4,
-      "source": "\"use strict\";\n\nvar _templateObject = _taggedTemplateLiteral([\"\\n    display:flex;\\n    flex-flow:column;\\n    justify-content: center;\\n    align-items: center;\\n\"], [\"\\n    display:flex;\\n    flex-flow:column;\\n    justify-content: center;\\n    align-items: center;\\n\"]);\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar React = require(\"react\");\nvar styled_components_1 = require(\"styled-components\");\nvar Wrapper = styled_components_1.default.div(_templateObject);\nexports.default = function () {\n    return React.createElement(Wrapper, null, React.createElement(\"h1\", null, \"Welcome!\"));\n};"
+      "source": "\"use strict\";\n\nvar _templateObject = _taggedTemplateLiteral([\"\\n    display:flex;\\n    flex-flow:column;\\n    justify-content: center;\\n    align-items: center;\\n\"], [\"\\n    display:flex;\\n    flex-flow:column;\\n    justify-content: center;\\n    align-items: center;\\n\"]);\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar React = require(\"react\");\nvar styled_components_1 = require(\"styled-components\");\nvar react_router_dom_1 = require(\"react-router-dom\");\nvar Wrapper = styled_components_1.default.div(_templateObject);\nexports.default = function () {\n    return React.createElement(Wrapper, null, React.createElement(\"h1\", null, \"Welcome!\"), React.createElement(react_router_dom_1.Link, { to: \"/tracks\" }, \"Klicka h\\xE4r f\\xF6r att v\\xE4lja bana\"));\n};"
     },
     {
       "id": 365,
@@ -21184,12 +21361,13 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        0
+        0,
+        4
       ],
       "assets": [],
-      "issuer": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/trackview/weather.component.tsx",
-      "issuerId": 373,
-      "issuerName": "./src/app/trackview/weather.component.tsx",
+      "issuer": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/track-list.component.tsx",
+      "issuerId": 378,
+      "issuerName": "./src/app/track-list/track-list.component.tsx",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -21211,11 +21389,47 @@
           "type": "cjs require",
           "userRequest": "../styles/index",
           "loc": "21:14-40"
+        },
+        {
+          "moduleId": 378,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/track-list.component.tsx",
+          "module": "./src/app/track-list/track-list.component.tsx",
+          "moduleName": "./src/app/track-list/track-list.component.tsx",
+          "type": "cjs require",
+          "userRequest": "../styles/index",
+          "loc": "19:14-40"
+        },
+        {
+          "moduleId": 379,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/shared/search.component.tsx",
+          "module": "./src/app/shared/search.component.tsx",
+          "moduleName": "./src/app/shared/search.component.tsx",
+          "type": "cjs require",
+          "userRequest": "../styles/index",
+          "loc": "20:14-40"
+        },
+        {
+          "moduleId": 380,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/styles/buttons.ts",
+          "module": "./src/app/styles/buttons.ts",
+          "moduleName": "./src/app/styles/buttons.ts",
+          "type": "cjs require",
+          "userRequest": "./index",
+          "loc": "11:14-32"
+        },
+        {
+          "moduleId": 382,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/track.component.tsx",
+          "module": "./src/app/track-list/track.component.tsx",
+          "moduleName": "./src/app/track-list/track.component.tsx",
+          "type": "cjs require",
+          "userRequest": "../styles/index",
+          "loc": "16:14-40"
         }
       ],
       "usedExports": true,
       "providedExports": null,
-      "depth": 6,
+      "depth": 5,
       "source": "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.Colors = {\n    white: \"#fff\",\n    gray: \"#f5f5f5\",\n    darkGray: \"#dcdcdc\",\n    hoverGray: \"#cfcfcf\",\n    black: \"#333\",\n    red: \"#d31411\",\n    linkBlue: \"#267788\"\n};\nexports.Sizes = {\n    \"pageSize\": \"1100px\"\n};"
     },
     {
@@ -21230,7 +21444,8 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        0
+        0,
+        4
       ],
       "assets": [],
       "issuer": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/enzo/enzo.service.ts",
@@ -21276,7 +21491,8 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        0
+        0,
+        4
       ],
       "assets": [],
       "issuer": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/trackview/track-view.component.tsx",
@@ -21294,6 +21510,15 @@
           "type": "cjs require",
           "userRequest": "../enzo/enzo.service",
           "loc": "21:21-52"
+        },
+        {
+          "moduleId": 378,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/track-list.component.tsx",
+          "module": "./src/app/track-list/track-list.component.tsx",
+          "moduleName": "./src/app/track-list/track-list.component.tsx",
+          "type": "cjs require",
+          "userRequest": "../enzo/enzo.service",
+          "loc": "23:21-52"
         }
       ],
       "usedExports": true,
@@ -21313,7 +21538,8 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        0
+        0,
+        4
       ],
       "assets": [],
       "issuer": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/trackview/track-view.component.tsx",
@@ -21331,6 +21557,15 @@
           "type": "cjs require",
           "userRequest": "../styles/grid",
           "loc": "19:13-38"
+        },
+        {
+          "moduleId": 378,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/track-list.component.tsx",
+          "module": "./src/app/track-list/track-list.component.tsx",
+          "moduleName": "./src/app/track-list/track-list.component.tsx",
+          "type": "cjs require",
+          "userRequest": "../styles/grid",
+          "loc": "18:13-38"
         }
       ],
       "usedExports": true,
@@ -21350,12 +21585,13 @@
       "optional": false,
       "prefetched": false,
       "chunks": [
-        0
+        0,
+        4
       ],
       "assets": [],
-      "issuer": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/trackview/weather.component.tsx",
-      "issuerId": 373,
-      "issuerName": "./src/app/trackview/weather.component.tsx",
+      "issuer": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/track-list.component.tsx",
+      "issuerId": 378,
+      "issuerName": "./src/app/track-list/track-list.component.tsx",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -21368,11 +21604,20 @@
           "type": "cjs require",
           "userRequest": "../styles/lists",
           "loc": "20:14-40"
+        },
+        {
+          "moduleId": 378,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/track-list.component.tsx",
+          "module": "./src/app/track-list/track-list.component.tsx",
+          "moduleName": "./src/app/track-list/track-list.component.tsx",
+          "type": "cjs require",
+          "userRequest": "../styles/lists",
+          "loc": "17:14-40"
         }
       ],
       "usedExports": true,
       "providedExports": null,
-      "depth": 6,
+      "depth": 5,
       "source": "\"use strict\";\n\nvar _templateObject = _taggedTemplateLiteral([\"\\n    list-style:none;\\n    padding:0px;\\n\"], [\"\\n    list-style:none;\\n    padding:0px;\\n\"]);\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar styled_components_1 = require(\"styled-components\");\nexports.Ul = styled_components_1.default.ul(_templateObject);"
     },
     {
@@ -21455,7 +21700,7 @@
       "name": "./src/app/utils/index.ts",
       "index": 327,
       "index2": 322,
-      "size": 447,
+      "size": 398,
       "cacheable": true,
       "built": false,
       "optional": false,
@@ -21484,7 +21729,7 @@
       "usedExports": true,
       "providedExports": null,
       "depth": 5,
-      "source": "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", { value: true });\nfunction getContrastYIQ(hexcolor) {\n    var r = parseInt(hexcolor.substr(0, 2), 16);\n    var g = parseInt(hexcolor.substr(2, 2), 16);\n    var b = parseInt(hexcolor.substr(4, 2), 16);\n    var yiq = (r * 299 + g * 587 + b * 114) / 1000;\n    console.log(yiq);\n    console.log(hexcolor);\n    return yiq >= 128 ? \"black\" : \"white\";\n}\nexports.getContrastYIQ = getContrastYIQ;"
+      "source": "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", { value: true });\nfunction getContrastYIQ(hexcolor) {\n    var r = parseInt(hexcolor.substr(0, 2), 16);\n    var g = parseInt(hexcolor.substr(2, 2), 16);\n    var b = parseInt(hexcolor.substr(4, 2), 16);\n    var yiq = (r * 299 + g * 587 + b * 114) / 1000;\n    return yiq >= 128 ? \"black\" : \"white\";\n}\nexports.getContrastYIQ = getContrastYIQ;"
     },
     {
       "id": 375,
@@ -21506,7 +21751,7 @@
       "issuerName": "./src/app/trackview/track-view.component.tsx",
       "failed": false,
       "errors": 0,
-      "warnings": 1,
+      "warnings": 0,
       "reasons": [
         {
           "moduleId": 365,
@@ -21559,6 +21804,265 @@
       "providedExports": null,
       "depth": 6,
       "source": "// style-loader: Adds some css to the DOM by adding a <style> tag\n\n// load the styles\nvar content = require(\"!!../../../css-loader/index.js!./ionicons-core.css\");\nif(typeof content === 'string') content = [[module.id, content, '']];\n// add the styles to the DOM\nvar update = require(\"!../../../style-loader/addStyles.js\")(content, {});\nif(content.locals) module.exports = content.locals;\n// Hot Module Replacement\nif(module.hot) {\n\t// When the styles change, update the <style> tags\n\tif(!content.locals) {\n\t\tmodule.hot.accept(\"!!../../../css-loader/index.js!./ionicons-core.css\", function() {\n\t\t\tvar newContent = require(\"!!../../../css-loader/index.js!./ionicons-core.css\");\n\t\t\tif(typeof newContent === 'string') newContent = [[module.id, newContent, '']];\n\t\t\tupdate(newContent);\n\t\t});\n\t}\n\t// When the module is disposed, remove the <style> tags\n\tmodule.hot.dispose(function() { update(); });\n}"
+    },
+    {
+      "id": 377,
+      "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/index.tsx",
+      "name": "./src/app/track-list/index.tsx",
+      "index": 328,
+      "index2": 331,
+      "size": 520,
+      "cacheable": true,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        3
+      ],
+      "assets": [],
+      "issuer": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/app.tsx",
+      "issuerId": 322,
+      "issuerName": "./src/app/app.tsx",
+      "failed": false,
+      "errors": 0,
+      "warnings": 1,
+      "reasons": [
+        {
+          "moduleId": 322,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/app.tsx",
+          "module": "./src/app/app.tsx",
+          "moduleName": "./src/app/app.tsx",
+          "type": "cjs require",
+          "userRequest": "./track-list",
+          "loc": "8:19-42"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "depth": 3,
+      "source": "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar React = require(\"react\");\nvar react_async_component_1 = require(\"react-async-component\");\nexports.default = react_async_component_1.asyncComponent({\n    resolve: function resolve() {\n        return System.import('./track-list.component').catch(console.error.bind(console));\n    },\n    ErrorComponent: function ErrorComponent(_ref) {\n        var error = _ref.error;\n        return React.createElement(\"div\", null, error.message);\n    }\n});"
+    },
+    {
+      "id": 378,
+      "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/track-list.component.tsx",
+      "name": "./src/app/track-list/track-list.component.tsx",
+      "index": 329,
+      "index2": 330,
+      "size": 4803,
+      "cacheable": true,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        4
+      ],
+      "assets": [],
+      "issuer": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/index.tsx",
+      "issuerId": 377,
+      "issuerName": "./src/app/track-list/index.tsx",
+      "failed": false,
+      "errors": 0,
+      "warnings": 1,
+      "reasons": [
+        {
+          "moduleId": 377,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/index.tsx",
+          "module": "./src/app/track-list/index.tsx",
+          "moduleName": "./src/app/track-list/index.tsx",
+          "type": "import()",
+          "userRequest": "./track-list.component",
+          "loc": "8:15-54"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "depth": 4,
+      "source": "\"use strict\";\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _templateObject = _taggedTemplateLiteral([\"\\n    display:flex;\\n    flex-flow:row;\\n    flex-wrap: wrap;\\n    justify-content:space-between;\\n    width:\", \";\\n\"], [\"\\n    display:flex;\\n    flex-flow:row;\\n    flex-wrap: wrap;\\n    justify-content:space-between;\\n    width:\", \";\\n\"]);\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar React = require(\"react\");\nvar lists_1 = require(\"../styles/lists\");\nvar grid_1 = require(\"../styles/grid\");\nvar index_1 = require(\"../styles/index\");\nvar track_component_1 = require(\"./track.component\");\nvar search_component_1 = require(\"../shared/search.component\");\nvar styled_components_1 = require(\"styled-components\");\nvar enzo_service_1 = require(\"../enzo/enzo.service\");\nvar ListWrap = styled_components_1.default(lists_1.Ul)(_templateObject, index_1.Sizes.pageSize);\n\nvar TrackList = function (_React$Component) {\n    _inherits(TrackList, _React$Component);\n\n    function TrackList(props) {\n        _classCallCheck(this, TrackList);\n\n        var _this = _possibleConstructorReturn(this, (TrackList.__proto__ || Object.getPrototypeOf(TrackList)).call(this, props));\n\n        _this.state = { currentTrack: null, currentConfig: null, trackArray: null };\n        // const initialTracks = this.props.initialTracks;\n        _this.filterTracks = _this.filterTracks.bind(_this);\n        return _this;\n    }\n\n    _createClass(TrackList, [{\n        key: \"componentDidMount\",\n        value: function componentDidMount() {\n            var tracks = enzo_service_1.default.getTracks();\n            this.setState({ trackArray: tracks });\n        }\n    }, {\n        key: \"updateCurrentTrack\",\n        value: function updateCurrentTrack(track) {\n            this.setState({ currentTrack: track });\n        }\n    }, {\n        key: \"filterTracks\",\n        value: function filterTracks(searchStr) {\n            console.log(searchStr);\n            searchStr === \"\" ? this.setState({ trackArray: this.props.initialTracks }) : this.setState({ trackArray: this.state.trackArray.filter(function (track) {\n                    return track.name.toLowerCase().search(searchStr.toLowerCase()) !== -1;\n                }) });\n        }\n    }, {\n        key: \"render\",\n        value: function render() {\n            var _this2 = this;\n\n            return React.createElement(grid_1.Section, null, React.createElement(grid_1.ArticleHeader, null, React.createElement(grid_1.Container, null, React.createElement(grid_1.Row, null, React.createElement(\"h1\", null, \"Banor\"), React.createElement(search_component_1.default, { searchChange: this.filterTracks })))), React.createElement(grid_1.Container, null, React.createElement(\"h2\", null, \"Selectable Tracks:\"), this.state.trackArray && React.createElement(ListWrap, null, this.state.trackArray.map(function (element, index) {\n                return React.createElement(track_component_1.default, { key: index, track: element, index: index, updateCurrentTrack: function updateCurrentTrack(element) {\n                        return _this2.updateCurrentTrack(element);\n                    } });\n            }))));\n        }\n    }]);\n\n    return TrackList;\n}(React.Component);\n\nexports.default = TrackList;"
+    },
+    {
+      "id": 379,
+      "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/shared/search.component.tsx",
+      "name": "./src/app/shared/search.component.tsx",
+      "index": 333,
+      "index2": 329,
+      "size": 3955,
+      "cacheable": true,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        4
+      ],
+      "assets": [],
+      "issuer": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/track-list.component.tsx",
+      "issuerId": 378,
+      "issuerName": "./src/app/track-list/track-list.component.tsx",
+      "failed": false,
+      "errors": 0,
+      "warnings": 1,
+      "reasons": [
+        {
+          "moduleId": 378,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/track-list.component.tsx",
+          "module": "./src/app/track-list/track-list.component.tsx",
+          "moduleName": "./src/app/track-list/track-list.component.tsx",
+          "type": "cjs require",
+          "userRequest": "../shared/search.component",
+          "loc": "21:25-62"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "depth": 5,
+      "source": "\"use strict\";\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _templateObject = _taggedTemplateLiteral([\"\\n    display:flex;\\n    align-items:center;\\n\"], [\"\\n    display:flex;\\n    align-items:center;\\n\"]),\n    _templateObject2 = _taggedTemplateLiteral([\"\\n    border:none;\\n    color:\", \";\\n    background-color:\", \";\\n    border-bottom: 2px solid white;\\n    padding:19px;\\n    padding-left:0px;\\n    position:relative;\\n    \", \"\\n\\n    &:after{\\n        content:\\\"\\\";\\n    }\\n\\n    &:focus{\\n        outline:none;\\n    }\\n\"], [\"\\n    border:none;\\n    color:\", \";\\n    background-color:\", \";\\n    border-bottom: 2px solid white;\\n    padding:19px;\\n    padding-left:0px;\\n    position:relative;\\n    \", \"\\n\\n    &:after{\\n        content:\\\"\\\";\\n    }\\n\\n    &:focus{\\n        outline:none;\\n    }\\n\"]),\n    _templateObject3 = _taggedTemplateLiteral([\"\\n        color: white;\\n    \"], [\"\\n        color: white;\\n    \"]);\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar React = require(\"react\");\nvar styled_components_1 = require(\"styled-components\");\nvar index_1 = require(\"../styles/index\");\nvar mixins_1 = require(\"../styles/mixins\");\nvar SearchWrap = styled_components_1.default.div(_templateObject);\nvar SearchBar = styled_components_1.default.input(_templateObject2, index_1.Colors.white, index_1.Colors.red, mixins_1.placeholder(_templateObject3));\n\nvar SearchComponent = function (_React$Component) {\n    _inherits(SearchComponent, _React$Component);\n\n    function SearchComponent() {\n        _classCallCheck(this, SearchComponent);\n\n        return _possibleConstructorReturn(this, (SearchComponent.__proto__ || Object.getPrototypeOf(SearchComponent)).apply(this, arguments));\n    }\n\n    _createClass(SearchComponent, [{\n        key: \"handleChange\",\n        value: function handleChange(event) {\n            console.log('change!', event);\n            this.props.searchChange(event.currentTarget.value);\n        }\n    }, {\n        key: \"render\",\n        value: function render() {\n            var _this2 = this;\n\n            return React.createElement(SearchWrap, null, React.createElement(SearchBar, { type: \"text\", placeholder: \"Sök på bana\", onChange: function onChange(event) {\n                    return _this2.handleChange(event);\n                } }));\n        }\n    }]);\n\n    return SearchComponent;\n}(React.Component);\n\nexports.default = SearchComponent;"
+    },
+    {
+      "id": 380,
+      "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/styles/buttons.ts",
+      "name": "./src/app/styles/buttons.ts",
+      "index": 331,
+      "index2": 325,
+      "size": 1900,
+      "cacheable": true,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        4
+      ],
+      "assets": [],
+      "issuer": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/track.component.tsx",
+      "issuerId": 382,
+      "issuerName": "./src/app/track-list/track.component.tsx",
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 382,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/track.component.tsx",
+          "module": "./src/app/track-list/track.component.tsx",
+          "moduleName": "./src/app/track-list/track.component.tsx",
+          "type": "cjs require",
+          "userRequest": "../styles/buttons",
+          "loc": "17:16-44"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "depth": 6,
+      "source": "\"use strict\";\n\nvar _templateObject = _taggedTemplateLiteral([\"\\n    margin-top: 1rem;\\n    color: \", \";\\n    background-color: \", \";\\n    border:none;\\n    border-radius:2px;\\n    transition: all .2s;\\n    padding: 0 3rem;\\n\\n    &:hover{\\n        background-color: \", \";\\n    }\\n\"], [\"\\n    margin-top: 1rem;\\n    color: \", \";\\n    background-color: \", \";\\n    border:none;\\n    border-radius:2px;\\n    transition: all .2s;\\n    padding: 0 3rem;\\n\\n    &:hover{\\n        background-color: \", \";\\n    }\\n\"]),\n    _templateObject2 = _taggedTemplateLiteral([\"\\n    margin-top: 1rem;\\n    color: \", \";\\n    background-color: \", \";\\n    border:none;\\n    border-radius:2px;\\n    transition: all .2s;\\n    padding: 0 3rem;\\n    max-width: 150px;\\n\\n    &:hover{\\n        background-color: \", \";\\n    }\\n\\n    a{\\n        color: \", \";\\n    }\\n\"], [\"\\n    margin-top: 1rem;\\n    color: \", \";\\n    background-color: \", \";\\n    border:none;\\n    border-radius:2px;\\n    transition: all .2s;\\n    padding: 0 3rem;\\n    max-width: 150px;\\n\\n    &:hover{\\n        background-color: \", \";\\n    }\\n\\n    a{\\n        color: \", \";\\n    }\\n\"]),\n    _templateObject3 = _taggedTemplateLiteral([\"\\n    \", \"\\n\"], [\"\\n    \", \"\\n\"]);\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar styled_components_1 = require(\"styled-components\");\nvar index_1 = require(\"./index\");\nexports.StandardBtn = styled_components_1.default.button(_templateObject, index_1.Colors.black, index_1.Colors.darkGray, index_1.Colors.hoverGray);\nexports.button = styled_components_1.css(_templateObject2, index_1.Colors.black, index_1.Colors.darkGray, index_1.Colors.hoverGray, index_1.Colors.black);\nexports.LinkWrap = styled_components_1.default.div(_templateObject3, exports.button);"
+    },
+    {
+      "id": 381,
+      "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/styles/mixins.ts",
+      "name": "./src/app/styles/mixins.ts",
+      "index": 334,
+      "index2": 328,
+      "size": 878,
+      "cacheable": true,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        4
+      ],
+      "assets": [],
+      "issuer": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/shared/search.component.tsx",
+      "issuerId": 379,
+      "issuerName": "./src/app/shared/search.component.tsx",
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 379,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/shared/search.component.tsx",
+          "module": "./src/app/shared/search.component.tsx",
+          "moduleName": "./src/app/shared/search.component.tsx",
+          "type": "cjs require",
+          "userRequest": "../styles/mixins",
+          "loc": "21:15-42"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "depth": 6,
+      "source": "\"use strict\";\n\nvar _templateObject = _taggedTemplateLiteral([\"\\n  &::-webkit-input-placeholder {\\n      \", \"\\n  };\\n  &:-moz-placeholder           {\\n      \", \"\\n  }\\n  &::-moz-placeholder          {\\n      \", \"\\n  }\\n  &:-ms-input-placeholder      {\\n      \", \"\\n  }\\n\"], [\"\\n  &::-webkit-input-placeholder {\\n      \", \"\\n  };\\n  &:-moz-placeholder           {\\n      \", \"\\n  }\\n  &::-moz-placeholder          {\\n      \", \"\\n  }\\n  &:-ms-input-placeholder      {\\n      \", \"\\n  }\\n\"]);\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar styled_components_1 = require(\"styled-components\");\nexports.placeholder = function (color) {\n    return styled_components_1.css(_templateObject, color, color, color, color);\n};"
+    },
+    {
+      "id": 382,
+      "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/track.component.tsx",
+      "name": "./src/app/track-list/track.component.tsx",
+      "index": 330,
+      "index2": 327,
+      "size": 4564,
+      "cacheable": true,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        4
+      ],
+      "assets": [],
+      "issuer": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/track-list.component.tsx",
+      "issuerId": 378,
+      "issuerName": "./src/app/track-list/track-list.component.tsx",
+      "failed": false,
+      "errors": 0,
+      "warnings": 1,
+      "reasons": [
+        {
+          "moduleId": 378,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/track-list.component.tsx",
+          "module": "./src/app/track-list/track-list.component.tsx",
+          "moduleName": "./src/app/track-list/track-list.component.tsx",
+          "type": "cjs require",
+          "userRequest": "./track.component",
+          "loc": "20:24-52"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "depth": 5,
+      "source": "\"use strict\";\n\nvar _templateObject = _taggedTemplateLiteral([\"\\n    height: 250px;\\n    width:100%;\\n    background-size:cover;\\n    background-position:center center;\\n    \\n\"], [\"\\n    height: 250px;\\n    width:100%;\\n    background-size:cover;\\n    background-position:center center;\\n    \\n\"]),\n    _templateObject2 = _taggedTemplateLiteral([\"\\n    width:400px;\\n    text-aling:center;\\n    overflow:hidden;\\n    position:relative;\\n    background-color:\", \";\\n    color:\", \";\\n    text-align:center;\\n    margin-bottom:2rem;\\n\"], [\"\\n    width:400px;\\n    text-aling:center;\\n    overflow:hidden;\\n    position:relative;\\n    background-color:\", \";\\n    color:\", \";\\n    text-align:center;\\n    margin-bottom:2rem;\\n\"]),\n    _templateObject3 = _taggedTemplateLiteral([\"\\n    position: absolute;\\n    height:70px;\\n    width:70px;\\n    border-radius:100%;\\n    padding:10px;\\n    background-color:\", \";\\n    display:flex;\\n    align-items:center;\\n    justify-content:center;\\n    left:50%;\\n    margin-left: -35px;\\n    bottom: 0%;\\n    margin-bottom:-35px;\\n    \\n\"], [\"\\n    position: absolute;\\n    height:70px;\\n    width:70px;\\n    border-radius:100%;\\n    padding:10px;\\n    background-color:\", \";\\n    display:flex;\\n    align-items:center;\\n    justify-content:center;\\n    left:50%;\\n    margin-left: -35px;\\n    bottom: 0%;\\n    margin-bottom:-35px;\\n    \\n\"]),\n    _templateObject4 = _taggedTemplateLiteral([\"\\n    width: 50px !important;\\n    height: 50px;\\n    display:block;\\n    background-repeat:no-repeat;\\n\"], [\"\\n    width: 50px !important;\\n    height: 50px;\\n    display:block;\\n    background-repeat:no-repeat;\\n\"]),\n    _templateObject5 = _taggedTemplateLiteral([\"\\n    font-size:  20px;\\n    margin-top: 55px;\\n    text-align: center;\\n\"], [\"\\n    font-size:  20px;\\n    margin-top: 55px;\\n    text-align: center;\\n\"]),\n    _templateObject6 = _taggedTemplateLiteral([\"\\n    position: absolute;\\n    bottom: -.4rem;\\n    left: 0;\\n\\n    .fill{\\n        fill: \", \"\\n    }\\n\"], [\"\\n    position: absolute;\\n    bottom: -.4rem;\\n    left: 0;\\n\\n    .fill{\\n        fill: \", \"\\n    }\\n\"]),\n    _templateObject7 = _taggedTemplateLiteral([\"\\n    position:relative;\\n\"], [\"\\n    position:relative;\\n\"]);\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar React = require(\"react\");\nvar styled_components_1 = require(\"styled-components\");\nvar index_1 = require(\"../styles/index\");\nvar buttons_1 = require(\"../styles/buttons\");\n// import \"flag-icon-css/css/flag-icon.min.css\";\nvar react_router_dom_1 = require(\"react-router-dom\");\nvar react_overdrive_1 = require(\"react-overdrive\");\nvar TrackImage = styled_components_1.default.div(_templateObject);\nvar TrackWrapper = styled_components_1.default.li(_templateObject2, index_1.Colors.gray, index_1.Colors.black);\nvar CountryWrap = styled_components_1.default.div(_templateObject3, index_1.Colors.white);\nvar CountryIcon = styled_components_1.default.span(_templateObject4);\nvar TrackTitle = styled_components_1.default.h2(_templateObject5);\nvar BoxBorder = styled_components_1.default.svg(_templateObject6, index_1.Colors.gray);\nvar ImageWrap = styled_components_1.default.div(_templateObject7);\nvar TrackComponent = function TrackComponent(_ref) {\n    var track = _ref.track,\n        index = _ref.index;\n\n    var countryClass = \"flag-icon flag-icon-\";\n    return React.createElement(TrackWrapper, { key: index }, React.createElement(react_overdrive_1.default, { id: \"track\" }, React.createElement(ImageWrap, null, React.createElement(TrackImage, { style: { backgroundImage: \"url(\" + track.image + \")\" } }), React.createElement(CountryWrap, null, React.createElement(CountryIcon, { className: countryClass + track.countryCode })), React.createElement(BoxBorder, { xmlns: \"//www.w3.org/2000/svg\", height: \"40\", width: \"170\" }, React.createElement(\"path\", { className: \"fill\", d: \"M3998,4894l51.91,18-1,5.29c75.27,22.9,152.4,34.56,231.23,40.06-0.44,2-.81,3.87-1.26,5.7s-1,3.77-1.78,6.41c7.79,0.53,15.17,1.17,22.57,1.51,12.14,0.56,24.29.9,36.43,1.38,1.65,0.07,3.28.42,4.92,0.64H3998v-79Z\", transform: \"translate(-3998 -4894)\" }))), React.createElement(TrackTitle, null, track.name), React.createElement(\"h5\", null, track.country), React.createElement(buttons_1.LinkWrap, null, React.createElement(react_router_dom_1.Link, { to: { pathname: '/track/' + track.id + '' } }, \" konfigurera din bil \"))));\n};\nexports.default = TrackComponent;"
+    },
+    {
+      "id": 383,
+      "identifier": "/home/johanwendin/Dev/ts/lab3/node_modules/react-overdrive/lib/Overdrive.min.js",
+      "name": "./~/react-overdrive/lib/Overdrive.min.js",
+      "index": 332,
+      "index2": 326,
+      "size": 22602,
+      "cacheable": true,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        4
+      ],
+      "assets": [],
+      "issuer": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/track.component.tsx",
+      "issuerId": 382,
+      "issuerName": "./src/app/track-list/track.component.tsx",
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 382,
+          "moduleIdentifier": "/home/johanwendin/Dev/ts/lab3/node_modules/awesome-typescript-loader/dist/entry.js??ref--1-0!/home/johanwendin/Dev/ts/lab3/node_modules/tslint-loader/index.js!/home/johanwendin/Dev/ts/lab3/src/app/track-list/track.component.tsx",
+          "module": "./src/app/track-list/track.component.tsx",
+          "moduleName": "./src/app/track-list/track.component.tsx",
+          "type": "cjs require",
+          "userRequest": "react-overdrive",
+          "loc": "20:24-50"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "depth": 6,
+      "source": "!function(t,n){\"object\"==typeof exports&&\"object\"==typeof module?module.exports=n(require(\"react\"),require(\"react-dom\")):\"function\"==typeof define&&define.amd?define(\"Overdrive\",[\"react\",\"react-dom\"],n):\"object\"==typeof exports?exports.Overdrive=n(require(\"react\"),require(\"react-dom\")):t.Overdrive=n(t.React,t.ReactDOM)}(this,function(t,n){return function(t){function n(r){if(e[r])return e[r].exports;var o=e[r]={i:r,l:!1,exports:{}};return t[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}var e={};return n.m=t,n.c=e,n.i=function(t){return t},n.d=function(t,e,r){n.o(t,e)||Object.defineProperty(t,e,{configurable:!1,enumerable:!0,get:r})},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,\"a\",e),e},n.o=function(t,n){return Object.prototype.hasOwnProperty.call(t,n)},n.p=\"\",n(n.s=95)}([function(t,n){var e=t.exports={version:\"2.4.0\"};\"number\"==typeof __e&&(__e=e)},function(t,n){var e=t.exports=\"undefined\"!=typeof window&&window.Math==Math?window:\"undefined\"!=typeof self&&self.Math==Math?self:Function(\"return this\")();\"number\"==typeof __g&&(__g=e)},function(t,n,e){t.exports=!e(7)(function(){return 7!=Object.defineProperty({},\"a\",{get:function(){return 7}}).a})},function(t,n,e){var r=e(1),o=e(0),i=e(32),u=e(8),c=\"prototype\",f=function(t,n,e){var a,s,l,p=t&f.F,d=t&f.G,y=t&f.S,v=t&f.P,h=t&f.B,m=t&f.W,b=d?o:o[n]||(o[n]={}),g=b[c],_=d?r:y?r[n]:(r[n]||{})[c];d&&(e=n);for(a in e)(s=!p&&_&&void 0!==_[a])&&a in b||(l=s?_[a]:e[a],b[a]=d&&\"function\"!=typeof _[a]?e[a]:h&&s?i(l,r):m&&_[a]==l?function(t){var n=function(n,e,r){if(this instanceof t){switch(arguments.length){case 0:return new t;case 1:return new t(n);case 2:return new t(n,e)}return new t(n,e,r)}return t.apply(this,arguments)};return n[c]=t[c],n}(l):v&&\"function\"==typeof l?i(Function.call,l):l,v&&((b.virtual||(b.virtual={}))[a]=l,t&f.R&&g&&!g[a]&&u(g,a,l)))};f.F=1,f.G=2,f.S=4,f.P=8,f.B=16,f.W=32,f.U=64,f.R=128,t.exports=f},function(t,n){var e={}.hasOwnProperty;t.exports=function(t,n){return e.call(t,n)}},function(t,n,e){var r=e(10),o=e(34),i=e(27),u=Object.defineProperty;n.f=e(2)?Object.defineProperty:function(t,n,e){if(r(t),n=i(n,!0),r(e),o)try{return u(t,n,e)}catch(t){}if(\"get\"in e||\"set\"in e)throw TypeError(\"Accessors not supported!\");return\"value\"in e&&(t[n]=e.value),t}},function(t,n,e){var r=e(35),o=e(16);t.exports=function(t){return r(o(t))}},function(t,n){t.exports=function(t){try{return!!t()}catch(t){return!0}}},function(t,n,e){var r=e(5),o=e(14);t.exports=e(2)?function(t,n,e){return r.f(t,n,o(1,e))}:function(t,n,e){return t[n]=e,t}},function(t,n,e){var r=e(24)(\"wks\"),o=e(15),i=e(1).Symbol,u=\"function\"==typeof i;(t.exports=function(t){return r[t]||(r[t]=u&&i[t]||(u?i:o)(\"Symbol.\"+t))}).store=r},function(t,n,e){var r=e(11);t.exports=function(t){if(!r(t))throw TypeError(t+\" is not an object!\");return t}},function(t,n){t.exports=function(t){return\"object\"==typeof t?null!==t:\"function\"==typeof t}},function(t,n,e){var r=e(40),o=e(17);t.exports=Object.keys||function(t){return r(t,o)}},function(t,n){n.f={}.propertyIsEnumerable},function(t,n){t.exports=function(t,n){return{enumerable:!(1&t),configurable:!(2&t),writable:!(4&t),value:n}}},function(t,n){var e=0,r=Math.random();t.exports=function(t){return\"Symbol(\".concat(void 0===t?\"\":t,\")_\",(++e+r).toString(36))}},function(t,n){t.exports=function(t){if(void 0==t)throw TypeError(\"Can't call method on  \"+t);return t}},function(t,n){t.exports=\"constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf\".split(\",\")},function(t,n){t.exports={}},function(t,n){t.exports=!0},function(t,n,e){var r=e(10),o=e(74),i=e(17),u=e(23)(\"IE_PROTO\"),c=function(){},f=\"prototype\",a=function(){var t,n=e(33)(\"iframe\"),r=i.length,o=\"<\",u=\">\";for(n.style.display=\"none\",e(67).appendChild(n),n.src=\"javascript:\",t=n.contentWindow.document,t.open(),t.write(o+\"script\"+u+\"document.F=Object\"+o+\"/script\"+u),t.close(),a=t.F;r--;)delete a[f][i[r]];return a()};t.exports=Object.create||function(t,n){var e;return null!==t?(c[f]=r(t),e=new c,c[f]=null,e[u]=t):e=a(),void 0===n?e:o(e,n)}},function(t,n){n.f=Object.getOwnPropertySymbols},function(t,n,e){var r=e(5).f,o=e(4),i=e(9)(\"toStringTag\");t.exports=function(t,n,e){t&&!o(t=e?t:t.prototype,i)&&r(t,i,{configurable:!0,value:n})}},function(t,n,e){var r=e(24)(\"keys\"),o=e(15);t.exports=function(t){return r[t]||(r[t]=o(t))}},function(t,n,e){var r=e(1),o=\"__core-js_shared__\",i=r[o]||(r[o]={});t.exports=function(t){return i[t]||(i[t]={})}},function(t,n){var e=Math.ceil,r=Math.floor;t.exports=function(t){return isNaN(t=+t)?0:(t>0?r:e)(t)}},function(t,n,e){var r=e(16);t.exports=function(t){return Object(r(t))}},function(t,n,e){var r=e(11);t.exports=function(t,n){if(!r(t))return t;var e,o;if(n&&\"function\"==typeof(e=t.toString)&&!r(o=e.call(t)))return o;if(\"function\"==typeof(e=t.valueOf)&&!r(o=e.call(t)))return o;if(!n&&\"function\"==typeof(e=t.toString)&&!r(o=e.call(t)))return o;throw TypeError(\"Can't convert object to primitive value\")}},function(t,n,e){var r=e(1),o=e(0),i=e(19),u=e(29),c=e(5).f;t.exports=function(t){var n=o.Symbol||(o.Symbol=i?{}:r.Symbol||{});\"_\"==t.charAt(0)||t in n||c(n,t,{value:u.f(t)})}},function(t,n,e){n.f=e(9)},function(t,n,e){\"use strict\";function r(t){return t&&t.__esModule?t:{default:t}}n.__esModule=!0;var o=e(49),i=r(o),u=e(48),c=r(u),f=\"function\"==typeof c.default&&\"symbol\"==typeof i.default?function(t){return typeof t}:function(t){return t&&\"function\"==typeof c.default&&t.constructor===c.default&&t!==c.default.prototype?\"symbol\":typeof t};n.default=\"function\"==typeof c.default&&\"symbol\"===f(i.default)?function(t){return void 0===t?\"undefined\":f(t)}:function(t){return t&&\"function\"==typeof c.default&&t.constructor===c.default&&t!==c.default.prototype?\"symbol\":void 0===t?\"undefined\":f(t)}},function(t,n){var e={}.toString;t.exports=function(t){return e.call(t).slice(8,-1)}},function(t,n,e){var r=e(63);t.exports=function(t,n,e){if(r(t),void 0===n)return t;switch(e){case 1:return function(e){return t.call(n,e)};case 2:return function(e,r){return t.call(n,e,r)};case 3:return function(e,r,o){return t.call(n,e,r,o)}}return function(){return t.apply(n,arguments)}}},function(t,n,e){var r=e(11),o=e(1).document,i=r(o)&&r(o.createElement);t.exports=function(t){return i?o.createElement(t):{}}},function(t,n,e){t.exports=!e(2)&&!e(7)(function(){return 7!=Object.defineProperty(e(33)(\"div\"),\"a\",{get:function(){return 7}}).a})},function(t,n,e){var r=e(31);t.exports=Object(\"z\").propertyIsEnumerable(0)?Object:function(t){return\"String\"==r(t)?t.split(\"\"):Object(t)}},function(t,n,e){\"use strict\";var r=e(19),o=e(3),i=e(41),u=e(8),c=e(4),f=e(18),a=e(69),s=e(22),l=e(39),p=e(9)(\"iterator\"),d=!([].keys&&\"next\"in[].keys()),y=\"keys\",v=\"values\",h=function(){return this};t.exports=function(t,n,e,m,b,g,_){a(e,n,m);var x,O,w,S=function(t){if(!d&&t in k)return k[t];switch(t){case y:return function(){return new e(this,t)};case v:return function(){return new e(this,t)}}return function(){return new e(this,t)}},j=n+\" Iterator\",E=b==v,P=!1,k=t.prototype,M=k[p]||k[\"@@iterator\"]||b&&k[b],T=M||S(b),F=b?E?S(\"entries\"):T:void 0,A=\"Array\"==n?k.entries||M:M;if(A&&(w=l(A.call(new t)))!==Object.prototype&&(s(w,j,!0),r||c(w,p)||u(w,p,h)),E&&M&&M.name!==v&&(P=!0,T=function(){return M.call(this)}),r&&!_||!d&&!P&&k[p]||u(k,p,T),f[n]=T,f[j]=h,b)if(x={values:E?T:S(v),keys:g?T:S(y),entries:F},_)for(O in x)O in k||i(k,O,x[O]);else o(o.P+o.F*(d||P),n,x);return x}},function(t,n,e){var r=e(13),o=e(14),i=e(6),u=e(27),c=e(4),f=e(34),a=Object.getOwnPropertyDescriptor;n.f=e(2)?a:function(t,n){if(t=i(t),n=u(n,!0),f)try{return a(t,n)}catch(t){}if(c(t,n))return o(!r.f.call(t,n),t[n])}},function(t,n,e){var r=e(40),o=e(17).concat(\"length\",\"prototype\");n.f=Object.getOwnPropertyNames||function(t){return r(t,o)}},function(t,n,e){var r=e(4),o=e(26),i=e(23)(\"IE_PROTO\"),u=Object.prototype;t.exports=Object.getPrototypeOf||function(t){return t=o(t),r(t,i)?t[i]:\"function\"==typeof t.constructor&&t instanceof t.constructor?t.constructor.prototype:t instanceof Object?u:null}},function(t,n,e){var r=e(4),o=e(6),i=e(65)(!1),u=e(23)(\"IE_PROTO\");t.exports=function(t,n){var e,c=o(t),f=0,a=[];for(e in c)e!=u&&r(c,e)&&a.push(e);for(;n.length>f;)r(c,e=n[f++])&&(~i(a,e)||a.push(e));return a}},function(t,n,e){t.exports=e(8)},function(t,n,e){\"use strict\";var r=e(54),o=e.n(r),i=e(52),u=e.n(i),c=e(46),f=e.n(c),a=e(50),s=e.n(a),l=e(51),p=e.n(l),d=e(55),y=e.n(d),v=e(53),h=e.n(v),m=e(93),b=e.n(m),g=e(94),_=e.n(g),x=200,O={},w=function(t){function n(t){s()(this,n);var e=y()(this,(n.__proto__||f()(n)).call(this,t));return e.state={loading:!0},e.animateEnd=e.animateEnd.bind(e),e}return h()(n,t),p()(n,[{key:\"animate\",value:function(t,n){var e=this,r=this.props.duration,o=void 0===r?x:r;t.top+=window.scrollY;var i=this.getPosition(!0),c=\"scaleX(1) scaleY(1) translateX(0px) translateY(0px)\",f=t.width/i.width,a=t.height/i.height,s=t.left-i.left,l=t.top-i.top;if(1!==f||1!==a||0!==s||0!==l){var p={transition:\"transform \"+o/1e3+\"s, opacity \"+o/1e3+\"s\",transformOrigin:\"0 0 0\"},d=b.a.cloneElement(n,{key:\"1\",style:u()({},p,t,{opacity:1,transform:c})}),y=b.a.cloneElement(n,{key:\"1\",style:u()({},p,t,{margin:i.margin,opacity:0,transform:\"matrix(\"+1/f+\", 0, 0, \"+1/a+\", \"+-s+\", \"+-l+\")\"})}),v=b.a.cloneElement(this.props.children,{key:\"2\",style:u()({},p,i,{margin:t.margin,opacity:0,transform:\"matrix(\"+f+\", 0, 0, \"+a+\", \"+s+\", \"+l+\")\"})}),h=b.a.cloneElement(this.props.children,{key:\"2\",style:u()({},p,i,{opacity:1,transform:c})}),m=b.a.createElement(\"div\",null,d,v),g=b.a.createElement(\"div\",null,y,h);this.setState({loading:!0});var O=document.createElement(\"div\");window.document.body.appendChild(O),this.bodyElement=O,_.a.render(m,O),this.animationTimeout=setTimeout(function(){_.a.render(g,O),e.animationTimeout=setTimeout(e.animateEnd,o)},0)}}},{key:\"animateEnd\",value:function(){this.animationTimeout=null,this.setState({loading:!1}),window.document.body.removeChild(this.bodyElement)}},{key:\"onHide\",value:function(){var t=this.props.id,n=b.a.cloneElement(this.props.children),e=this.getPosition();O[t]={prevPosition:e,prevElement:n},this.clearAnimations(),setTimeout(function(){O[t]=!1},100)}},{key:\"onShow\",value:function(){if(!this.onShowLock){this.onShowLock=!0;var t=this.props,n=t.id,e=t.animationDelay;if(O[n]){var r=O[n],o=r.prevPosition,i=r.prevElement;O[n]=!1,e?this.animationDelayTimeout=setTimeout(this.animate.bind(this,o,i),e):this.animate(o,i)}else this.setState({loading:!1})}}},{key:\"componentDidMount\",value:function(){this.onShow()}},{key:\"clearAnimations\",value:function(){clearTimeout(this.animationDelayTimeout),clearTimeout(this.animationTimeout),this.animationTimeout&&this.animateEnd()}},{key:\"componentWillUnmount\",value:function(){this.onHide()}},{key:\"componentWillReceiveProps\",value:function(){this.onShowLock=!1,this.onHide()}},{key:\"componentDidUpdate\",value:function(){this.onShow()}},{key:\"getPosition\",value:function(t){var n=this.element,e=n.getBoundingClientRect(),r=getComputedStyle(n),o=parseInt(r.marginTop,10),i=parseInt(r.marginLeft,10);return{top:e.top-o+(t?1:0)*window.scrollY,left:e.left-i,width:e.width,height:e.height,margin:r.margin,padding:r.padding,borderRadius:r.borderRadius,position:\"absolute\"}}},{key:\"render\",value:function(){var t=this,n=this.props,e=(n.id,n.duration,n.animationDelay,n.style),r=void 0===e?{}:e,i=o()(n,[\"id\",\"duration\",\"animationDelay\",\"style\"]),c=u()({},r,{opacity:this.state.loading?0:1});return b.a.createElement(\"div\",u()({ref:function(n){return t.element=n&&n.firstChild},style:c},i),this.props.children)}}]),n}(b.a.Component);w.propTypes={id:b.a.PropTypes.string.isRequired,duration:b.a.PropTypes.number,animationDelay:b.a.PropTypes.number},n.a=w},function(t,n,e){t.exports={default:e(56),__esModule:!0}},function(t,n,e){t.exports={default:e(57),__esModule:!0}},function(t,n,e){t.exports={default:e(58),__esModule:!0}},function(t,n,e){t.exports={default:e(59),__esModule:!0}},function(t,n,e){t.exports={default:e(60),__esModule:!0}},function(t,n,e){t.exports={default:e(61),__esModule:!0}},function(t,n,e){t.exports={default:e(62),__esModule:!0}},function(t,n,e){\"use strict\";n.__esModule=!0,n.default=function(t,n){if(!(t instanceof n))throw new TypeError(\"Cannot call a class as a function\")}},function(t,n,e){\"use strict\";function r(t){return t&&t.__esModule?t:{default:t}}n.__esModule=!0;var o=e(45),i=r(o);n.default=function(){function t(t,n){for(var e=0;e<n.length;e++){var r=n[e];r.enumerable=r.enumerable||!1,r.configurable=!0,\"value\"in r&&(r.writable=!0),(0,i.default)(t,r.key,r)}}return function(n,e,r){return e&&t(n.prototype,e),r&&t(n,r),n}}()},function(t,n,e){\"use strict\";function r(t){return t&&t.__esModule?t:{default:t}}n.__esModule=!0;var o=e(43),i=r(o);n.default=i.default||function(t){for(var n=1;n<arguments.length;n++){var e=arguments[n];for(var r in e)Object.prototype.hasOwnProperty.call(e,r)&&(t[r]=e[r])}return t}},function(t,n,e){\"use strict\";function r(t){return t&&t.__esModule?t:{default:t}}n.__esModule=!0;var o=e(47),i=r(o),u=e(44),c=r(u),f=e(30),a=r(f);n.default=function(t,n){if(\"function\"!=typeof n&&null!==n)throw new TypeError(\"Super expression must either be null or a function, not \"+(void 0===n?\"undefined\":(0,a.default)(n)));t.prototype=(0,c.default)(n&&n.prototype,{constructor:{value:t,enumerable:!1,writable:!0,configurable:!0}}),n&&(i.default?(0,i.default)(t,n):t.__proto__=n)}},function(t,n,e){\"use strict\";n.__esModule=!0,n.default=function(t,n){var e={};for(var r in t)n.indexOf(r)>=0||Object.prototype.hasOwnProperty.call(t,r)&&(e[r]=t[r]);return e}},function(t,n,e){\"use strict\";function r(t){return t&&t.__esModule?t:{default:t}}n.__esModule=!0;var o=e(30),i=r(o);n.default=function(t,n){if(!t)throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\");return!n||\"object\"!==(void 0===n?\"undefined\":(0,i.default)(n))&&\"function\"!=typeof n?t:n}},function(t,n,e){e(82),t.exports=e(0).Object.assign},function(t,n,e){e(83);var r=e(0).Object;t.exports=function(t,n){return r.create(t,n)}},function(t,n,e){e(84);var r=e(0).Object;t.exports=function(t,n,e){return r.defineProperty(t,n,e)}},function(t,n,e){e(85),t.exports=e(0).Object.getPrototypeOf},function(t,n,e){e(86),t.exports=e(0).Object.setPrototypeOf},function(t,n,e){e(89),e(87),e(90),e(91),t.exports=e(0).Symbol},function(t,n,e){e(88),e(92),t.exports=e(29).f(\"iterator\")},function(t,n){t.exports=function(t){if(\"function\"!=typeof t)throw TypeError(t+\" is not a function!\");return t}},function(t,n){t.exports=function(){}},function(t,n,e){var r=e(6),o=e(80),i=e(79);t.exports=function(t){return function(n,e,u){var c,f=r(n),a=o(f.length),s=i(u,a);if(t&&e!=e){for(;a>s;)if((c=f[s++])!=c)return!0}else for(;a>s;s++)if((t||s in f)&&f[s]===e)return t||s||0;return!t&&-1}}},function(t,n,e){var r=e(12),o=e(21),i=e(13);t.exports=function(t){var n=r(t),e=o.f;if(e)for(var u,c=e(t),f=i.f,a=0;c.length>a;)f.call(t,u=c[a++])&&n.push(u);return n}},function(t,n,e){t.exports=e(1).document&&document.documentElement},function(t,n,e){var r=e(31);t.exports=Array.isArray||function(t){return\"Array\"==r(t)}},function(t,n,e){\"use strict\";var r=e(20),o=e(14),i=e(22),u={};e(8)(u,e(9)(\"iterator\"),function(){return this}),t.exports=function(t,n,e){t.prototype=r(u,{next:o(1,e)}),i(t,n+\" Iterator\")}},function(t,n){t.exports=function(t,n){return{value:n,done:!!t}}},function(t,n,e){var r=e(12),o=e(6);t.exports=function(t,n){for(var e,i=o(t),u=r(i),c=u.length,f=0;c>f;)if(i[e=u[f++]]===n)return e}},function(t,n,e){var r=e(15)(\"meta\"),o=e(11),i=e(4),u=e(5).f,c=0,f=Object.isExtensible||function(){return!0},a=!e(7)(function(){return f(Object.preventExtensions({}))}),s=function(t){u(t,r,{value:{i:\"O\"+ ++c,w:{}}})},l=function(t,n){if(!o(t))return\"symbol\"==typeof t?t:(\"string\"==typeof t?\"S\":\"P\")+t;if(!i(t,r)){if(!f(t))return\"F\";if(!n)return\"E\";s(t)}return t[r].i},p=function(t,n){if(!i(t,r)){if(!f(t))return!0;if(!n)return!1;s(t)}return t[r].w},d=function(t){return a&&y.NEED&&f(t)&&!i(t,r)&&s(t),t},y=t.exports={KEY:r,NEED:!1,fastKey:l,getWeak:p,onFreeze:d}},function(t,n,e){\"use strict\";var r=e(12),o=e(21),i=e(13),u=e(26),c=e(35),f=Object.assign;t.exports=!f||e(7)(function(){var t={},n={},e=Symbol(),r=\"abcdefghijklmnopqrst\";return t[e]=7,r.split(\"\").forEach(function(t){n[t]=t}),7!=f({},t)[e]||Object.keys(f({},n)).join(\"\")!=r})?function(t,n){for(var e=u(t),f=arguments.length,a=1,s=o.f,l=i.f;f>a;)for(var p,d=c(arguments[a++]),y=s?r(d).concat(s(d)):r(d),v=y.length,h=0;v>h;)l.call(d,p=y[h++])&&(e[p]=d[p]);return e}:f},function(t,n,e){var r=e(5),o=e(10),i=e(12);t.exports=e(2)?Object.defineProperties:function(t,n){o(t);for(var e,u=i(n),c=u.length,f=0;c>f;)r.f(t,e=u[f++],n[e]);return t}},function(t,n,e){var r=e(6),o=e(38).f,i={}.toString,u=\"object\"==typeof window&&window&&Object.getOwnPropertyNames?Object.getOwnPropertyNames(window):[],c=function(t){try{return o(t)}catch(t){return u.slice()}};t.exports.f=function(t){return u&&\"[object Window]\"==i.call(t)?c(t):o(r(t))}},function(t,n,e){var r=e(3),o=e(0),i=e(7);t.exports=function(t,n){var e=(o.Object||{})[t]||Object[t],u={};u[t]=n(e),r(r.S+r.F*i(function(){e(1)}),\"Object\",u)}},function(t,n,e){var r=e(11),o=e(10),i=function(t,n){if(o(t),!r(n)&&null!==n)throw TypeError(n+\": can't set as prototype!\")};t.exports={set:Object.setPrototypeOf||(\"__proto__\"in{}?function(t,n,r){try{r=e(32)(Function.call,e(37).f(Object.prototype,\"__proto__\").set,2),r(t,[]),n=!(t instanceof Array)}catch(t){n=!0}return function(t,e){return i(t,e),n?t.__proto__=e:r(t,e),t}}({},!1):void 0),check:i}},function(t,n,e){var r=e(25),o=e(16);t.exports=function(t){return function(n,e){var i,u,c=String(o(n)),f=r(e),a=c.length;return f<0||f>=a?t?\"\":void 0:(i=c.charCodeAt(f),i<55296||i>56319||f+1===a||(u=c.charCodeAt(f+1))<56320||u>57343?t?c.charAt(f):i:t?c.slice(f,f+2):u-56320+(i-55296<<10)+65536)}}},function(t,n,e){var r=e(25),o=Math.max,i=Math.min;t.exports=function(t,n){return t=r(t),t<0?o(t+n,0):i(t,n)}},function(t,n,e){var r=e(25),o=Math.min;t.exports=function(t){return t>0?o(r(t),9007199254740991):0}},function(t,n,e){\"use strict\";var r=e(64),o=e(70),i=e(18),u=e(6);t.exports=e(36)(Array,\"Array\",function(t,n){this._t=u(t),this._i=0,this._k=n},function(){var t=this._t,n=this._k,e=this._i++;return!t||e>=t.length?(this._t=void 0,o(1)):\"keys\"==n?o(0,e):\"values\"==n?o(0,t[e]):o(0,[e,t[e]])},\"values\"),i.Arguments=i.Array,r(\"keys\"),r(\"values\"),r(\"entries\")},function(t,n,e){var r=e(3);r(r.S+r.F,\"Object\",{assign:e(73)})},function(t,n,e){var r=e(3);r(r.S,\"Object\",{create:e(20)})},function(t,n,e){var r=e(3);r(r.S+r.F*!e(2),\"Object\",{defineProperty:e(5).f})},function(t,n,e){var r=e(26),o=e(39);e(76)(\"getPrototypeOf\",function(){return function(t){return o(r(t))}})},function(t,n,e){var r=e(3);r(r.S,\"Object\",{setPrototypeOf:e(77).set})},function(t,n){},function(t,n,e){\"use strict\";var r=e(78)(!0);e(36)(String,\"String\",function(t){this._t=String(t),this._i=0},function(){var t,n=this._t,e=this._i;return e>=n.length?{value:void 0,done:!0}:(t=r(n,e),this._i+=t.length,{value:t,done:!1})})},function(t,n,e){\"use strict\";var r=e(1),o=e(4),i=e(2),u=e(3),c=e(41),f=e(72).KEY,a=e(7),s=e(24),l=e(22),p=e(15),d=e(9),y=e(29),v=e(28),h=e(71),m=e(66),b=e(68),g=e(10),_=e(6),x=e(27),O=e(14),w=e(20),S=e(75),j=e(37),E=e(5),P=e(12),k=j.f,M=E.f,T=S.f,F=r.Symbol,A=r.JSON,C=A&&A.stringify,D=\"prototype\",I=d(\"_hidden\"),R=d(\"toPrimitive\"),N={}.propertyIsEnumerable,L=s(\"symbol-registry\"),W=s(\"symbols\"),q=s(\"op-symbols\"),Y=Object[D],J=\"function\"==typeof F,B=r.QObject,G=!B||!B[D]||!B[D].findChild,H=i&&a(function(){return 7!=w(M({},\"a\",{get:function(){return M(this,\"a\",{value:7}).a}})).a})?function(t,n,e){var r=k(Y,n);r&&delete Y[n],M(t,n,e),r&&t!==Y&&M(Y,n,r)}:M,K=function(t){var n=W[t]=w(F[D]);return n._k=t,n},U=J&&\"symbol\"==typeof F.iterator?function(t){return\"symbol\"==typeof t}:function(t){return t instanceof F},z=function(t,n,e){return t===Y&&z(q,n,e),g(t),n=x(n,!0),g(e),o(W,n)?(e.enumerable?(o(t,I)&&t[I][n]&&(t[I][n]=!1),e=w(e,{enumerable:O(0,!1)})):(o(t,I)||M(t,I,O(1,{})),t[I][n]=!0),H(t,n,e)):M(t,n,e)},X=function(t,n){g(t);for(var e,r=m(n=_(n)),o=0,i=r.length;i>o;)z(t,e=r[o++],n[e]);return t},Q=function(t,n){return void 0===n?w(t):X(w(t),n)},V=function(t){var n=N.call(this,t=x(t,!0));return!(this===Y&&o(W,t)&&!o(q,t))&&(!(n||!o(this,t)||!o(W,t)||o(this,I)&&this[I][t])||n)},Z=function(t,n){if(t=_(t),n=x(n,!0),t!==Y||!o(W,n)||o(q,n)){var e=k(t,n);return!e||!o(W,n)||o(t,I)&&t[I][n]||(e.enumerable=!0),e}},$=function(t){for(var n,e=T(_(t)),r=[],i=0;e.length>i;)o(W,n=e[i++])||n==I||n==f||r.push(n);return r},tt=function(t){for(var n,e=t===Y,r=T(e?q:_(t)),i=[],u=0;r.length>u;)!o(W,n=r[u++])||e&&!o(Y,n)||i.push(W[n]);return i};J||(F=function(){if(this instanceof F)throw TypeError(\"Symbol is not a constructor!\");var t=p(arguments.length>0?arguments[0]:void 0),n=function(e){this===Y&&n.call(q,e),o(this,I)&&o(this[I],t)&&(this[I][t]=!1),H(this,t,O(1,e))};return i&&G&&H(Y,t,{configurable:!0,set:n}),K(t)},c(F[D],\"toString\",function(){return this._k}),j.f=Z,E.f=z,e(38).f=S.f=$,e(13).f=V,e(21).f=tt,i&&!e(19)&&c(Y,\"propertyIsEnumerable\",V,!0),y.f=function(t){return K(d(t))}),u(u.G+u.W+u.F*!J,{Symbol:F});for(var nt=\"hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables\".split(\",\"),et=0;nt.length>et;)d(nt[et++]);for(var nt=P(d.store),et=0;nt.length>et;)v(nt[et++]);u(u.S+u.F*!J,\"Symbol\",{for:function(t){return o(L,t+=\"\")?L[t]:L[t]=F(t)},keyFor:function(t){if(U(t))return h(L,t);throw TypeError(t+\" is not a symbol!\")},useSetter:function(){G=!0},useSimple:function(){G=!1}}),u(u.S+u.F*!J,\"Object\",{create:Q,defineProperty:z,defineProperties:X,getOwnPropertyDescriptor:Z,getOwnPropertyNames:$,getOwnPropertySymbols:tt}),A&&u(u.S+u.F*(!J||a(function(){var t=F();return\"[null]\"!=C([t])||\"{}\"!=C({a:t})||\"{}\"!=C(Object(t))})),\"JSON\",{stringify:function(t){if(void 0!==t&&!U(t)){for(var n,e,r=[t],o=1;arguments.length>o;)r.push(arguments[o++]);return n=r[1],\"function\"==typeof n&&(e=n),!e&&b(n)||(n=function(t,n){if(e&&(n=e.call(this,t,n)),!U(n))return n}),r[1]=n,C.apply(A,r)}}}),F[D][R]||e(8)(F[D],R,F[D].valueOf),l(F,\"Symbol\"),l(Math,\"Math\",!0),l(r.JSON,\"JSON\",!0)},function(t,n,e){e(28)(\"asyncIterator\")},function(t,n,e){e(28)(\"observable\")},function(t,n,e){e(81);for(var r=e(1),o=e(8),i=e(18),u=e(9)(\"toStringTag\"),c=[\"NodeList\",\"DOMTokenList\",\"MediaList\",\"StyleSheetList\",\"CSSRuleList\"],f=0;f<5;f++){var a=c[f],s=r[a],l=s&&s.prototype;l&&!l[u]&&o(l,u,a),i[a]=i.Array}},function(n,e){n.exports=t},function(t,e){t.exports=n},function(t,n,e){\"use strict\";Object.defineProperty(n,\"__esModule\",{value:!0});var r=e(42);n.default=r.a}])});"
     }
   ],
   "filteredModules": 0,

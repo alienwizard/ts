@@ -6,10 +6,10 @@ import { Sizes } from "../styles/index";
 import TrackComponent from "./track.component";
 import SearchComponent from "../shared/search.component";
 import styled from "styled-components";
+import Enzo from "../enzo/enzo.service";
 //import "ionicons/dist/css/ionicons.min.css";
 
 type trackListProps = {
-    initialTracks: track[];
 };
 
 interface TrackListState {
@@ -28,10 +28,15 @@ const ListWrap = styled(Ul)`
 export default class TrackList extends React.Component<trackListProps, TrackListState> {
     constructor(props: trackListProps) {
         super(props);
-        this.state = {currentTrack: null, currentConfig: null, trackArray: this.props.initialTracks};
+        this.state = {currentTrack: null, currentConfig: null, trackArray: null};
         // const initialTracks = this.props.initialTracks;
         this.filterTracks = this.filterTracks.bind(this)
     }
+
+     componentDidMount() {
+         const tracks = Enzo.getTracks();
+         this.setState({trackArray: tracks});
+     }
 
     updateCurrentTrack(track: track) {
         this.setState({ currentTrack:  track})
