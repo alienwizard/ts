@@ -7,7 +7,7 @@ import Enzo from "../enzo/enzo.service";
 import WeatherComponent from "./weather.component";
 import WeatherService from "../weather/weather.service";
 import { getContrastYIQ } from "../utils/index";
-import "flag-icon-css/css/flag-icon.min.css";
+// import "flag-icon-css/css/flag-icon.min.css";
 import { Link } from "react-router-dom";
 
 const TrackHeader = styled.header`

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { track } from "../types/index";
 import { Colors } from "../styles/index";
 import { LinkWrap } from "../styles/buttons";
-import "flag-icon-css/css/flag-icon.min.css";
+// import "flag-icon-css/css/flag-icon.min.css";
 import { Link } from "react-router-dom";
 import Overdrive from "react-overdrive"
 
@@ -70,10 +70,6 @@ const ImageWrap = styled.div`
     position:relative;
 `;
 
-const TrackLink = styled(({...props}) =>  <Link {...props}/>)`
-
-`;
-
 type trackProps = {
     track: track,
     index: number
@@ -96,7 +92,7 @@ const TrackComponent = ({track, index}: trackProps) => {
                 <TrackTitle>{track.name}</TrackTitle>
                 <h5>{track.country}</h5>
                 <LinkWrap>
-                    <Link to={{pathname: '/track/'+track.id+''}}> konfigurera din bil </Link>
+                    <Link to={{pathname: '/track/' + track.id + ''}}> konfigurera din bil </Link>
                 </LinkWrap>
             </Overdrive>
         </TrackWrapper>

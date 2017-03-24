@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/app/trackview/weather.component.tsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">src/app/trackview</a> weather.component.tsx
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/25</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/23</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import * as R<span class="cstat-no" title="statement not covered" >eact from "react";<span class="cstat-no" title="statement not covered" ></span></span>
+<span class="cstat-no" title="statement not covered" >import { weather } from "../types/index";</span>
+import { Ul } <span class="cstat-no" title="statement not covered" >from "../styles/l</span>ists";
+import { Colors <span class="cstat-no" title="statement not covered" >} from "../styles/index"</span>
+import styled fr<span class="cstat-no" title="statement not covered" >om "styled-components";</span>
+import "ionicons/dist/css/io<span class="cstat-no" title="statement not covered" >nicons-core.css";</span>
+<span class="cstat-no" title="statement not covered" ></span>
+interface Weather<span class="cstat-no" title="statement not covered" >State {</span>
+    isVisible: boolean;
+}
+&nbsp;
+interface WeatherProps {
+    forecastList: weather[];
+    selectForecast: (element: weather) =&gt; void;
+}<span class="cstat-no" title="statement not covered" ></span>
+&nbsp;
+const TempWrap = styled.li`
+    display:flex;<span class="cstat-no" title="statement not covered" ></span>
+    flex-flow: row;
+    justify-content: space-around;
+    align-ite<span class="cstat-no" title="statement not covered" >ms:center;</span>
+&nbsp;
+`;
+&nbsp;
+const ConditionInfo = styled.h3`
+    font-size: 16px;
+`;<span class="fstat-no" title="function not covered" ></span>
+<span class="cstat-no" title="statement not covered" ></span>
+const Te<span class="cstat-no" title="statement not covered" >mpInfo = styled.h2`<span class="fstat-no" title="function not covered" ></span></span>
+    font-siz<span class="cstat-no" title="statement not covered" >e: 18px;<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span>
+`;
+&nbsp;
+const Link = styled.span`
+    font<span class="cstat-no" title="statement not covered" >-size: 12px;<span class="fstat-no" title="function not covered" ></span></span>
+    color: $<span class="cstat-no" title="statement not covered" >{Colors.linkBlue};</span>
+    cursor:p<span class="cstat-no" title="statement not covered" >ointer;</span>
+`;
+<span class="cstat-no" title="statement not covered" ></span>
+export default class WeatherList extends React.Component&lt;WeatherProps, WeatherState&gt; {
+    constructor(props: WeatherProps) {
+<span class="fstat-no" title="function not covered" ></span>        super(props);
+        this.state = {isVisible: true};
+    };
+&nbsp;
+    componentDidMount() {
+        /*
+        const weatherGraph = d3.json(this.props.forecastList, function(data){
+    let extent = d3.extent(data, function(d: weather) {
+        return d.temperature;
+    });
+&nbsp;
+    let scale = d3.scaleLinear()
+        .domain(extent)
+<span class="fstat-no" title="function not covered" ></span>        .range([0, 600]);
+})<span class="cstat-no" title="statement not covered" ></span>
+*/<span class="cstat-no" title="statement not covered" ></span>
+    }
+&nbsp;
+    showWeather = () =&gt; {
+        this.setState( prevState =&gt; (<span class="fstat-no" title="function not covered" >{<span class="cstat-no" title="statement not covered" ></span></span>
+            isVisible: !prevState.isVisible
+        }));
+    };
+    selectForecast = (element: weather) =&gt; {
+        console.log('selected weather', element);<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+        this.props.selectForecast(element);
+    }
+    render() {
+<span class="cstat-no" title="statement not covered" >        const forecastList = th</span>is.props.forecastList;
+        return (
+            &lt;div&gt;
+            {this.state.isVisible &amp;&amp;
+            &lt;Ul&gt;
+                Dagens Väderprognos:
+                {this.props.forecastList &amp;&amp;
+                forecastList.map((element, index) =&gt;
+                    &lt;TempWrap key={index}&gt;
+                        &lt;ConditionInfo&gt;{element.conditions}&lt;/ConditionInfo&gt;
+                        &lt;TempInfo&gt;{element.temperature}°&lt;/TempInfo&gt;
+                        &lt;Link onClick={ (e) =&gt; this.selectForecast(element)}&gt;Välj prognos&lt;/Link&gt;
+                    &lt;/TempWrap&gt;
+                )
+                }
+            &lt;/Ul&gt;
+            }
+            &lt;/div&gt;
+            );
+    };
+}</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Mar 24 2017 14:17:10 GMT+0100 (CET)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

@@ -1,9 +1,5 @@
 import * as React from "react";
-import Enzo from "../enzo/enzo.service";
-import TrackList  from "../track-list/trackList";
 import styled from "styled-components";
-
-const trackList = Enzo.getTracks();
 
 const Wrapper = styled.div`
     display:flex;
@@ -14,6 +10,6 @@ const Wrapper = styled.div`
 
 export default () => (
     <Wrapper>
-        <TrackList initialTracks={trackList}/>
+        <h1>Welcome!</h1>
     </Wrapper>
 );

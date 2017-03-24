@@ -1,27 +1,20 @@
-# Build matrix
+sudo: required
+dist: trusty
 language: node_js
-matrix:
-  include:
-
-    # Lint only in Node.js 0.12
-    - node_js: '0.12'
-      env: MODE=lint
-
-    # Pa11y check only in Node.js 4.x
-    - node_js: '4'
-      env: MODE=pa11y
-      (etc...)
-
-    # Run tests in Node.js 4.x
-    - node_js: '4'
-      (etc...)
-
-    # Run tests in Node.js 6.x
-    - node_js: '6'
-      (etc...)
-
-# Build script
-script:
-  - 'if [ $MODE == "lint" ]; then make lint; fi'
-  - 'if [ $MODE == "pa11y" ]; then make start & sleep 5; make test-pa11y; fi'
-  - 'if [ ! $MODE ]; then make test; fi'
+node_js:
+  - "7.5.0"
+before_install:
+ - export CHROME_BIN=/usr/bin/google-chrome
+ - export DISPLAY=:99.0
+ - sh -e /etc/init.d/xvfb start
+ - sudo apt-get update
+ - sudo apt-get install -y libappindicator1 fonts-liberation
+ - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+ - sudo dpkg -i google-chrome*.deb
+script: 
+  - npm run build
+  - npm run lint
+  - npm run test -- --single-run -- --log-level debug
+after_success:
+  - npm i -g coveralls
+  - cat coverage/remapped/lcov.info | coveralls

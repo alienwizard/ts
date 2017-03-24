@@ -1,24 +1,18 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = require("react");
-const enzo_service_1 = require("./enzo/enzo.service");
-const trackList_1 = require("./enzo/trackList");
+const react_router_dom_1 = require("react-router-dom");
+const home_1 = require("./home");
+const _1 = require("./trackview/");
 const header_1 = require("./header/header");
-const styled_components_1 = require("styled-components");
-const trackList = enzo_service_1.default.getTracks();
-const Wrapper = styled_components_1.default.div `
-    display:flex;
-    flex-flow:column;
-    justify-content: center;
-    align-items: center;
-`;
-const Container = styled_components_1.default.section `
-    display:flex;
-    flex-flow: row;
-    width: 1100px;
-`;
-exports.default = (props) => React.createElement(Wrapper, null,
-    React.createElement(header_1.default, null),
-    React.createElement(Container, null,
-        React.createElement(trackList_1.TrackList, { trackArray: trackList })));
+const no_match_component_1 = require("./shared/no-match.component");
+/**Home route not rendering the component */
+exports.default = () => (React.createElement(react_router_dom_1.BrowserRouter, null,
+    React.createElement("div", null,
+        React.createElement(header_1.default, null),
+        React.createElement(react_router_dom_1.Switch, null,
+            React.createElement(react_router_dom_1.Route, { exact: true, path: "/", component: home_1.default }),
+            React.createElement(react_router_dom_1.Route, { exact: true, path: "/tracks", component: home_1.default }),
+            React.createElement(react_router_dom_1.Route, { path: "/track/:trackId", component: _1.default }),
+            React.createElement(react_router_dom_1.Route, { component: no_match_component_1.default })))));
 //# sourceMappingURL=app.js.map

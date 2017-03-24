@@ -12,6 +12,7 @@ export default () => (
             <Header />
             <Switch>
                 <Route exact path="/" component={Home}/>
+                <Route exact path="/tracks" component={Home} />
                 <Route path="/track/:trackId" component={TrackView}/>
                 <Route component={NoMatchComponent}/>
             </Switch>

@@ -16,7 +16,8 @@
 "useWebpackText": true,
 "useTranspileModule": true,
 "doTypeCheck": true,
-"forkChecker": true
+"forkChecker": true,
+"useCache": true
 },
     "compileOnSave": true,
         "include": [
